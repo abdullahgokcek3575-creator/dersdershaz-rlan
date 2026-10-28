@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7. Sınıf Din Kültürü 1. Dönem 1. Yazılı - MEBİ Soruları ve Çözümleri</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-din">
+  
+    <header class="site-header">
+      <div class="nav-bar">
+        <a href="index.html" class="brand-link">
+          <span class="brand-badge" style="background: linear-gradient(135deg, #0f766e, #0d9488);">7. SINIF MEBİ</span>
+          <span>Yazılıya Hazırlık Portalı</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">🏠 Ana Sayfa</a>
+<a href="7-turkce.html" class="nav-link">📚 7. Türkçe</a>
+<a href="7-matematik.html" class="nav-link">📐 7. Matematik</a>
+<a href="7-fen-bilimleri.html" class="nav-link">🔬 7. Fen</a>
+<a href="7-sosyal-bilgiler.html" class="nav-link">🌍 7. Sosyal</a>
+<a href="7-din-kulturu.html" class="nav-link active">🕌 7. Din</a>
+<a href="7-ingilizce.html" class="nav-link">🇬🇧 7. İngilizce</a>
+<a href="turkce.html" class="nav-link">📘 5. Sınıf Portalı</a>
+<a href="qr_giris.html" class="nav-link">📱 Ağ / TV Giriş</a>
+
+        </nav>
+      </div>
+    </header>
+    
+
+  <main class="container">
+    <div class="lesson-header">
+      <div class="lesson-info">
+        <h1><span>🕌</span> 7. Sınıf Din Kültürü 1. Dönem 1. Yazılı (MEBİ)</h1>
+        <p>Melek ve Ahiret İnancı • Dört Büyük Melek • Ahiretin Aşamaları • 9 Sorunun Tamamı Çözümlü</p>
+      </div>
+      <div class="score-box">
+        <div class="score-val" id="currentScoreVal">0</div>
+        <div class="score-lbl">Mevcut Puan / 100</div>
+      </div>
+    </div>
+
+    <!-- Audio Player Bar -->
+    <div class="audio-bar">
+      <div class="audio-bar-info">
+        <div class="audio-icon-pulse">🔊</div>
+        <div>
+          <strong style="display:block; font-size:0.95rem;">Din Kültürü MEBİ Sesli Rehber</strong>
+          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır — Dinlemek için ses butonlarına tıklayın</span>
+        </div>
+      </div>
+      <div class="audio-controls">
+        <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Duraklat / Devam Et</button>
+        <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Durdur</button>
+        <button class="btn-audio primary" onclick="portalApp.speakText('7. Sınıf Din Kültürü 1. Dönem 1. Yazılı MEBİ Konu Özeti. Varlıklar alemi ve melekler, dört büyük melek Cebrail, Mikail, İsrafil ve Azrail, Kiramen Katibin ve Münker Nekir melekleri, ahiret hayatının aşamaları ölüm, kıyamet, baas, haşr, mizan, cennet ve cehennem ile ahiret inancının insan davranışlarına etkisi sınavın temel konularıdır.')">📢 Sınav Konu Özetini Dinle</button>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal MEBİ PDF'i Üzerinde Soruları Çöz</button>
+      <button class="tab-btn" data-tab="answer-key-pane">🔑 Resmi Çözümler (Sayfa 6, 7, 8)</button>
+    </div>
+
+    <!-- TAB 1: WORKBENCH -->
+    <div id="pdf-pane" class="tab-pane active">
+      <div class="interactive-pdf-container">
+        
+        <!-- Sayfa 1 & 2 -->
+        <div class="pdf-interactive-page">
+          <div class="page-banner"><span>📄 MEBİ Soru Kitapçığı - Sayfa 1 & 2 (Soru 1, Soru 2, Soru 3, Soru 4)</span><span>50 Puan</span></div>
+          <div class="pdf-image-wrap"><img src="assets/pdf_pages/din_mebi/page_1.png" alt="Din Sayfa 1" loading="eager"></div>
+          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;"><img src="assets/pdf_pages/din_mebi/page_2.png" alt="Din Sayfa 2" loading="lazy"></div>
+          <div class="pdf-question-controls">
+    <div class="q-strip" id="q_strip_7_1">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 1</span>
+          <strong>Varlıklar Âlemi ve Meleklerin Özellikleri</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q1.mp3', 'q_strip_7_1', 'Soru 1. Ahmet\'in düşüncesinden hareketle meleklerin varlığı ve duyu organlarıyla algılanamaması durumunu açıklayınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol1.mp3', 'q_strip_7_1', 'Soru 1 çözümü. Melekler gözle görülemeyen nurani varlıklardır. Varlıkları vahiy yoluyla yani Kuran ve peygamberimizin bildirmesiyle bilinir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_1')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Meleklerin varlığı ve algılanamaması hakkında açıklamanızı yazınız..."></textarea>
+      <div id="sol_reveal_7_1" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body"><strong>Meleklerin Özellikleri:</strong><br>Melekler duyu organlarımızla (göz, kulak vb.) algılanamayan, nurdan yaratılmış ruhani varlıklardır. Gözle görülememeleri onların yok olduğu anlamına gelmez; akıl, rüzgar ve elektrik gibi meleklerin varlığını da Allah'ın peygamberleri aracılığıyla bildirdiği vahiy sayesinde kesin olarak biliriz.</div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_1', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_1', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_1', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+    <div class="q-strip" id="q_strip_7_2">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 2</span>
+          <strong>Dört Büyük Melek ve Görevleri Tablosu</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q2.mp3', 'q_strip_7_2', 'Soru 2. Dört büyük meleğin isimlerini ve görevlerini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol2.mp3', 'q_strip_7_2', 'Soru 2 çözümü. Cebrail vahiy getirmekle, Mikail tabiat olaylarını düzenlemekle, İsrafil sura üflemekle, Azrail ise eceli gelen canlıların canını almakla görevlidir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_2')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Cebrail, Mikail, İsrafil, Azrail görevleri..."></textarea>
+      <div id="sol_reveal_7_2" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body">• <strong>Cebrail (a.s.):</strong> Allah'ın emir ve vahiylerini peygamberlere iletmekle görevlidir.<br>• <strong>Mikâil (a.s.):</strong> Yağmur, rüzgâr gibi tabiat olaylarını ve rızıkları idare etmekle görevlidir.<br>• <strong>İsrâfil (a.s.):</strong> Kıyamet günü ve yeniden dirilişte Sûr borusuna üflemekle görevlidir.<br>• <strong>Azrâil (a.s.):</strong> Eceli gelen canlıların ruhunu teslim almakla görevlidir.</div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_2', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_2', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_2', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+    <div class="q-strip" id="q_strip_7_3">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 3</span>
+          <strong>Diğer Melekler (Kirâmen Kâtibîn, Münker-Nekir)</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q3.mp3', 'q_strip_7_3', 'Soru 3. Kabirde sorgu yapan ve insanların amellerini yazan meleklerin adlarını yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol3.mp3', 'q_strip_7_3', 'Soru 3 çözümü. İyilik ve kötülükleri yazan melekler Kiramen Katibin, kabirde sorgulayan melekler Münker ve Nekirdir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_3')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Kirâmen Kâtibîn, Münker-Nekir..."></textarea>
+      <div id="sol_reveal_7_3" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body">• <strong>İnsanların sevap ve günahlarını kaydeden melekler:</strong> <strong>Kirâmen Kâtibîn</strong> (Yazıcı Melekler)<br>• <strong>Kabirde insanları sorguya çeken melekler:</strong> <strong>Münker ve Nekir</strong><br>• <strong>Cennet ve cehennem görevlisi melekler:</strong> Rıdvan (Cennet) ve Mâlik (Cehennem)</div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_3', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_3', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_3', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+    <div class="q-strip" id="q_strip_7_4">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 4</span>
+          <strong>Ahiret Hayatının Aşamaları (Kıyamet, Baas, Haşr, Mizan)</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q4.mp3', 'q_strip_7_4', 'Soru 4. Ayetlerde bahsedilen ahiret aşamalarını tespit ediniz: Baas, Haşr, Mizan, Cennet ve Cehennem.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol4.mp3', 'q_strip_7_4', 'Soru 4 çözümü. Kabirlerden çıkıp dirilme Baas, toplanma meydanı Mahşer ve Haşr, amellerin tartılması Mizan, amellere göre gidecek yer Cennet veya Cehennemdir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_4')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Baas, Haşr, Mizan, Cennet/Cehennem..."></textarea>
+      <div id="sol_reveal_7_4" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body">• <strong>Ölümden sonra yeniden diriliş:</strong> <strong>Ba's (Yeniden Diriliş)</strong><br>• <strong>İnsanların toplanması ve toplanma yeri:</strong> <strong>Haşr ve Mahşer</strong><br>• <strong>Amellerin, sevap ve günahların tartıldığı ilahi adalet terazisi:</strong> <strong>Mîzan</strong><br>• <strong>Sorgu ve hesap sonrası ebedi kalış yerleri:</strong> <strong>Cennet veya Cehennem</strong></div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_4', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_4', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_4', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    </div>
+        </div>
+
+        <!-- Sayfa 3, 4, 5 -->
+        <div class="pdf-interactive-page">
+          <div class="page-banner"><span>📄 MEBİ Soru Kitapçığı - Sayfa 3, 4 & 5 (Soru 5, 6, 7, 8, 9)</span><span>50 Puan</span></div>
+          <div class="pdf-image-wrap"><img src="assets/pdf_pages/din_mebi/page_3.png" alt="Din Sayfa 3" loading="lazy"></div>
+          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;"><img src="assets/pdf_pages/din_mebi/page_4.png" alt="Din Sayfa 4" loading="lazy"></div>
+          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;"><img src="assets/pdf_pages/din_mebi/page_5.png" alt="Din Sayfa 5" loading="lazy"></div>
+          <div class="pdf-question-controls">
+    <div class="q-strip" id="q_strip_7_5">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 5</span>
+          <strong>Ömür, Ecel ve Ahiret Sorumluluğu</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q5.mp3', 'q_strip_7_5', 'Soru 5. Canlıların yaşam süresinin sınırlı olması, ömür ve ecel kavramları ile ahiret bilinci ilişkisini açıklayınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol5.mp3', 'q_strip_7_5', 'Soru 5 çözümü. Her canlının bir eceli vardır. Ömür bir emanettir. Ahirete inanan insan zamanını ve ömrünü faydalı amellerle değerlendirir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_5')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Ömür, ecel ve sorumluluk bilincini açıklayınız..."></textarea>
+      <div id="sol_reveal_7_5" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body"><strong>Ömür, Ecel ve Sorumluluk:</strong><br>Her canlının Allah tarafından takdir edilmiş bir yaşam süresi (<strong>ömür</strong>) ve bu sürenin sona erdiği an (<strong>ecel</strong>) vardır. Ahiret inancına sahip birey, dünyanın geçici bir imtihan yeri olduğunu bilir; bu yüzden ömrünü güzel ahlakla, kul hakkından sakınarak ve topluma faydalı amellerle geçirir.</div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_5', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_5', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_5', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+    <div class="q-strip" id="q_strip_7_6">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 6</span>
+          <strong>Amel Defteri ve İlahi Adalet</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q6.mp3', 'q_strip_7_6', 'Soru 6. İnsanların bölük bölük kabirlerinden çıkması ve amel defterlerinin verilmesi neyi ifade eder?')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol6.mp3', 'q_strip_7_6', 'Soru 6 çözümü. Kıyametten sonraki yeniden dirilişi yani baası ve herkesin dünyada yaptıklarının hesabını vereceği ilahi adaleti ifade eder.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_6')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Açıklamanızı yazınız..."></textarea>
+      <div id="sol_reveal_7_6" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body"><strong>Açıklama:</strong><br>İnsanların kabirlerinden çıkması <strong>yeniden dirilişi (ba's)</strong> simgeler. Herkesin dünyada yaptığı zerre kadar hayrın da şerrin de kaydedildiği <strong>amel defteri</strong> kendisine verilerek eksiksiz bir adaletle hesaba çekilecektir.</div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_6', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_6', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_6', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+    <div class="q-strip" id="q_strip_7_7">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 7</span>
+          <strong>Melek ve Ahiret İnancının İnsana Kazandırdıkları</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q7.mp3', 'q_strip_7_7', 'Soru 7. Melek ve ahiret inancının bireyin davranışlarına ve iç huzuruna sağladığı iki katkıyı yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol7.mp3', 'q_strip_7_7', 'Soru 7 çözümü. 1: Kişi daima gözetlendiğini bilerek kötülüklerden ve haksızlıktan uzak durur. 2: Adaletin tecelli edeceğini bilerek zorluklar karşısında sabreder ve ümitsizliğe düşmez.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_7')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="İki temel katkıyı yazınız..."></textarea>
+      <div id="sol_reveal_7_7" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body">1. <strong>Otokontrol ve Sorumluluk Bilinci:</strong> İnsan meleklerin kendisini kaydettiğini bildiği için kimsenin görmediği yerlerde bile yalandan, hırsızlıktan ve kötülükten uzak durur.<br>2. <strong>İç Huzur ve Adalet İnancı:</strong> Dünyada haksızlığa uğrasa bile ahirette hakkını alacağını bilmek insanı teselli eder, ölüm korkusunu hafifletir ve huzur verir.</div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_7', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_7', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_7', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+    <div class="q-strip" id="q_strip_7_8">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 8</span>
+          <strong>İnanç ve İnsan Davranışı İlişkisi</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q8.mp3', 'q_strip_7_8', 'Soru 8. Eren ve Selma\'nın diyalogundan hareketle inancın amele ve ahlaka yansımasını açıklayınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol8.mp3', 'q_strip_7_8', 'Soru 8 çözümü. İnanç sadece dille söylemekten ibaret değildir. Gerçek iman, dürüstlük, merhamet ve yardımseverlik gibi ahlaki davranışlarla hayat bulur.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_8')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Açıklamanızı yazınız..."></textarea>
+      <div id="sol_reveal_7_8" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body"><strong>İnanç-Ahlak İlişkisi:</strong><br>İnanç, insanın tutum ve davranışlarının temel belirleyicisidir. Allah'a ve ahirete samimiyetle inanan bir kişi, inancını sözde bırakmaz; dürüst, adil, yardımsever ve merhametli davranarak inancını ahlakına yansıtır.</div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_8', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_8', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_8', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+    <div class="q-strip" id="q_strip_7_9">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge" style="background:#ccfbf1; color:#0f766e;">Soru 9</span>
+          <strong>Hz. İsa'nın Hayatı ve Mucizeleri</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din7_q9.mp3', 'q_strip_7_9', 'Soru 9. Kur\'an-ı Kerim\'de bildirilen Hz. İsa\'nın hayatına dair iki temel özelliği veya mucizesini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din7_sol9.mp3', 'q_strip_7_9', 'Soru 9 çözümü. Babasız dünyaya gelmesi, beşikteyken konuşması, çamurdan kuş yapıp canlandırması, hastaları iyileştirmesi ve kendisine İncil verilmiş olmasıdır.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7_9')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Hz. İsa'nın iki mucizesini yazınız..."></textarea>
+      <div id="sol_reveal_7_9" class="q-solution-reveal">
+        <div class="sol-title">📌 MEBİ Resmi Öğretmen Çözümü & Model Yanıt:</div>
+        <div class="sol-body">• <strong>Babası olmadan, mucizevi şekilde Hz. Meryem'den dünyaya gelmiştir.</strong><br>• <strong>Henüz beşikte bir bebekken konuşmuştur.</strong><br>• <strong>Allah'ın izniyle körleri ve alacalı hastaları iyileştirmiş, ölüleri diriltmiştir.</strong><br>• <strong>Kendisine dört büyük kutsal kitaptan biri olan İncil verilmiştir.</strong></div>
+        <div class="self-grading">
+          <span>Puanlama:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q7_9', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q7_9', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q7_9', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin: 36px 0;">
+        <button class="btn-start" style="padding: 18px 42px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
+          🏆 7. Sınıf Din Kültürü Notumu Hesapla
+        </button>
+      </div>
+    </div>
+
+    <!-- TAB 2: OFFICIAL SOLUTIONS -->
+    <div id="answer-key-pane" class="tab-pane">
+      <div class="pdf-interactive-page">
+        <div class="page-banner" style="background:#047857;">
+          <span>📄 MEBİ Resmi Öğretmen Çözüm Anahtarı (Sayfa 6, 7, 8)</span>
+          <span style="font-size:0.85rem; opacity:0.85;">Temel Eğitim Genel Müdürlüğü</span>
+        </div>
+        <div class="pdf-image-wrap"><img src="assets/pdf_pages/din_mebi/page_6.png" alt="Çözüm 6" loading="lazy"></div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;"><img src="assets/pdf_pages/din_mebi/page_7.png" alt="Çözüm 7" loading="lazy"></div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;"><img src="assets/pdf_pages/din_mebi/page_8.png" alt="Çözüm 8" loading="lazy"></div>
+      </div>
+    </div>
+
+  </main>
+
+  
+    <div id="scoreModal" class="modal-overlay">
+      <div class="modal-content">
+        <h2>🎉 Sınav Tamamlandı!</h2>
+        <div class="modal-score" id="finalScoreVal">100</div>
+        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Başarı Puanı / 100</p>
+        <p id="scoreFeedback" style="font-size: 1.05rem; line-height: 1.5; color: #334155;">Harika bir çalışma gerçekleştirdin!</p>
+        <button class="btn-modal" onclick="portalApp.closeModal()">Kapat ve İncelemeye Devam Et</button>
+      </div>
+    </div>
+    
+  
+    <footer class="site-footer">
+      <div class="container">
+        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">7. Sınıf MEBİ Yazılıya Hazırlık Portalı</p>
+        <p style="margin-top: 4px;">Tüm Sorular Çözümlü • Orijinal MEBİ PDF'leri Üzerinde Doğrudan Çalışma • PC, Telefon, Tablet, Smart TV Uyumlu</p>
+        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Temel Eğitim Genel Müdürlüğü Müfredat Uyumlu</p>
+      </div>
+    </footer>
+    
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    initLesson('din_7', 'tr-TR');
+  </script>
+</body>
+</html>
