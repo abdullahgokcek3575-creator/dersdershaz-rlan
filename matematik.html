@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5. Sınıf Matematik 1. Dönem 1. Yazılı - Orijinal PDF Üzerinde Çalışma</title>
+  <title>5. Sınıf Matematik 1. Dönem 1. Yazılı - 10 Sorunun Tamamı Çözümlü</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }</style>
 </head>
 <body class="theme-mat">
   
     <header class="site-header">
       <div class="nav-bar">
         <a href="index.html" class="brand-link">
-          <span class="brand-badge">5. SINIF</span>
-          <span>Akıllı Yazılı Çalışma Portalı</span>
+          <span class="brand-badge">AKILLI PORTAL</span>
+          <span>Etkileşimli Yazılı Hazırlık</span>
         </a>
         <nav class="nav-links">
           <a href="index.html" class="nav-link">🏠 Ana Sayfa</a>
-<a href="turkce.html" class="nav-link">📚 Türkçe</a>
-<a href="matematik.html" class="nav-link active">📐 Matematik</a>
-<a href="fen-bilimleri.html" class="nav-link">🔬 Fen Bilimleri</a>
-<a href="sosyal-bilgiler.html" class="nav-link">🌍 Sosyal Bilgiler</a>
-<a href="din-kulturu.html" class="nav-link">🕌 Din Kültürü</a>
-<a href="ingilizce.html" class="nav-link">🇬🇧 İngilizce</a>
+<a href="turkce.html" class="nav-link">📚 5. Sınıf Türkçe</a>
+<a href="matematik.html" class="nav-link active">📐 5. Sınıf Matematik</a>
+<a href="fen-bilimleri.html" class="nav-link">🔬 5. Sınıf Fen</a>
+<a href="sosyal-bilgiler.html" class="nav-link">🌍 5. Sınıf Sosyal</a>
+<a href="din-kulturu.html" class="nav-link">🕌 5. Sınıf Din</a>
+<a href="ingilizce.html" class="nav-link">🇬🇧 5. Sınıf İngilizce</a>
+<a href="mebi-sorulari.html" class="nav-link">⭐ 7. Sınıf MEBİ Yazılıları</a>
 <a href="qr_giris.html" class="nav-link">📱 Ağ / TV Giriş</a>
 
         </nav>
@@ -36,8 +36,8 @@
   <main class="container">
     <div class="lesson-header">
       <div class="lesson-info">
-        <h1><span>📐</span> Matematik 1. Dönem 1. Yazılı</h1>
-        <p>Orijinal Sınav Kağıdı Üzerinde Soru Soru Sesli Çözüm • Geometrik Çizimler • Doğru Parçası • Açılar</p>
+        <h1><span>📐</span> 5. Sınıf Matematik 1. Dönem 1. Yazılı</h1>
+        <p>10 Sorunun Tamamı İnteraktif Çözümlü • PDF Üzerinde Doğrudan Çalışma • 100 Puanlık Sınav</p>
       </div>
       <div class="score-box">
         <div class="score-val" id="currentScoreVal">0</div>
@@ -45,166 +45,379 @@
       </div>
     </div>
 
-    <!-- Master Audio Bar -->
+    <!-- Audio Player Bar -->
     <div class="audio-bar">
       <div class="audio-bar-info">
         <div class="audio-icon-pulse">🔊</div>
         <div>
-          <strong style="display:block; font-size:0.95rem;">Matematik Doğal Sesli Öğretmen Anlatımı</strong>
-          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır (Dinlemek için ses butonlarına dokunun)</span>
+          <strong style="display:block; font-size:0.95rem;">Matematik Sesli Rehber (PC & Mobil Uyumlu)</strong>
+          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır — Dinlemek için ses butonlarına tıklayın</span>
         </div>
       </div>
       <div class="audio-controls">
         <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Duraklat / Devam Et</button>
         <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Durdur</button>
-        <button class="btn-audio primary" onclick="portalApp.playAudio('mat_summary.mp3')">📢 Sınav Konu Özetini Dinle</button>
+        <button class="btn-audio primary" onclick="portalApp.playAudio('mat_summary.mp3', null, '5. Sınıf Matematik 1. Dönem 1. Yazılı Konu Özeti. Geometrik çizim araçları, doğru parçası ve ışın sembolleri, pergel ile çember çizimi, tümler açılar 90 derece ve bütünler açılar 180 derecedir.')">📢 Konu Özetini Dinle</button>
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Tabs -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Çalış & Dinle</button>
+      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde 10 Soruyu Çöz</button>
+      <button class="tab-btn" data-tab="answer-key-pane">🔑 Resmi Çözüm Anahtarı</button>
       <button class="tab-btn" data-tab="summary-pane">💡 Sınavda Çıkacak Hap Bilgiler</button>
     </div>
 
-    <!-- TAB 1: DIRECT PDF WORKBENCH -->
+    <!-- TAB 1: WORKBENCH -->
     <div id="pdf-pane" class="tab-pane active">
       <div class="interactive-pdf-container">
         
-        <!-- PAGE 1 -->
+        <!-- Sayfa 1 (Soru 1-4) -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 1 (Soru 1, Soru 2, Soru 3)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
+            <span>📄 Soru Kağıdı Sayfa 1 (Soru 1, 2, 3, 4)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">40 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/matematik_p1.png" alt="Matematik Sayfa 1" loading="eager">
+            <img src="assets/pdf_pages/matematik/page_1.png" alt="Matematik Sayfa 1" loading="eager">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q1 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 1:</span> Geometrik Çizim Araçları (10 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q1.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('mat_sol1.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_mat_1')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Pergel, gönye, iletki (açıölçer) araçlarının isimlerini ve kullanım alanlarını yazınız..."></textarea>
-            <div id="pdf_sol_mat_1" class="q-solution-reveal">
-              <strong>✅ Resmi Çözüm:</strong> 1. İletki (Açıölçer): Açıları ölçmeye ve çizmeye yarar. • 2. Pergel: Çember ve yay çizmek, eşit mesafeleri taşımak için kullanılır. • 3. Gönye: Dik açıları (90°) ve dik üçgenleri çizmek için kullanılır.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_mat_1', 10, 10, this)">10 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_mat_1', 10, 5, this)">5 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_mat_1', 10, 0, this)">0 Puan</button>
-              </div>
-            </div>
-
-            <hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">
-
-            <!-- Q2 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 2:</span> Doğru, Işın ve Doğru Parçası Sembolleri (10 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q2.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('mat_sol2.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_mat_2')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Doğru, ışın ve doğru parçası sembolik gösterimlerini yazınız..."></textarea>
-            <div id="pdf_sol_mat_2" class="q-solution-reveal">
-              <strong>✅ Resmi Çözüm:</strong> Doğru: Her iki yöne sonsuz [AB doğrusu], Işın: Başlangıcı sabit bir ucu sonsuz [AB ışını veya [AB), Doğru Parçası: İki ucu da kapalı [AB] veya |AB|.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_mat_2', 10, 10, this)">10 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_mat_2', 10, 5, this)">5 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_mat_2', 10, 0, this)">0 Puan</button>
-              </div>
-            </div>
+            
+    <div class="q-strip" id="q_strip_1">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 1</span>
+          <strong>Çizim Araçlarının İsimleri</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q1.mp3', 'q_strip_1', 'Soru 1. Aşağıda verilen dört adet çizim aracının isimlerini altlarına yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol1.mp3', 'q_strip_1', 'Soru 1\'in çözümü. Sırasıyla: Gönye, Cetvel, Açıölçer yani iletki, ve Pergel.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_1')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: Gönye, 2: Cetvel, 3: Açıölçer, 4: Pergel..."></textarea>
+      <div id="sol_reveal_1" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. <strong>Gönye</strong><br>2. <strong>Cetvel</strong><br>3. <strong>Açıölçer (İletki)</strong><br>4. <strong>Pergel</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_1', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_1', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_1', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_2">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 2</span>
+          <strong>Geometrik Çizimlerin Sembolik Gösterimi</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q2.mp3', 'q_strip_2', 'Soru 2. A ve V noktalarıyla verilen doğru parçası ve ışının sembolle gösterimini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol2.mp3', 'q_strip_2', 'Soru 2\'nin çözümü. A şıkkı doğru parçası olduğu için köşeli parantez AV veya köşeli parantez VA. B şıkkı ışın olduğu için köşeli parantez AV şeklinde gösterilir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_2')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="a) [AV] ... b) [AV ..."></textarea>
+      <div id="sol_reveal_2" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">a) Doğru Parçası: <strong>[AV]</strong> veya <strong>[VA]</strong><br>b) Işın (A noktası kapalı, V yönünde sonsuz): <strong>[AV</strong> veya <strong>[AV)</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_2', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_2', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_2', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_3">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 3</span>
+          <strong>Açının Kolları, Köşesi ve Sembolle Gösterimi</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q3.mp3', 'q_strip_3', 'Soru 3. Şekilde verilen açının kollarını, köşesini ve sembolle gösterimlerini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol3.mp3', 'q_strip_3', 'Soru 3\'ün çözümü. Açının kolları LM ışını ve LK ışınıdır. Köşesi L noktasıdır. Sembolle gösterimi M L K açısı, K L M açısı veya sadece L açısıdır.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_3')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="a) Kolları: ... b) Köşesi: ... c) Sembolle:"></textarea>
+      <div id="sol_reveal_3" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">a) <strong>Açının Kolları:</strong> [LM ışını ve [LK ışını<br>b) <strong>Açının Köşesi:</strong> L noktası<br>c) <strong>Sembolle Gösterimleri:</strong> ML̂K, KL̂M, L̂</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_3', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_3', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_3', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_4">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 4</span>
+          <strong>Pergel ile 3 cm Yarıçaplı Çember Çizimi</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q4.mp3', 'q_strip_4', 'Soru 4. Pergel kullanarak 3 santimetre yarıçaplı bir çember çiziniz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol4.mp3', 'q_strip_4', 'Soru 4\'ün çözümü. Pergelin sivri ucu ile kalem ucu arasındaki mesafe cetvel üzerinde 3 santimetre açılır. Sivri uç merkez olarak sabitlenip 360 derece döndürülerek çizilir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_4')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Çizim adımlarını veya pergel açıklığını yazınız..."></textarea>
+      <div id="sol_reveal_4" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Çizim Adımları:</strong><br>1. Cetvel üzerinde pergelin açıklığı tam <strong>3 cm</strong> ayarlanır.<br>2. Sayfada bir 'M' (Merkez) noktası belirlenir.<br>3. Pergelin iğneli ucu M noktasına sabitlenerek kalem 360° döndürülür.<br><em>Elde edilen çemberin yarıçapı r = 3 cm, çapı R = 6 cm olur.</em></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_4', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_4', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_4', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
-        <!-- PAGE 2 -->
+        <!-- Sayfa 2 (Soru 5-10) -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 2 (Soru 4 - 7)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
+            <span>📄 Soru Kağıdı Sayfa 2 (Soru 5, 6, 7, 8, 9, 10)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">60 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/matematik_p2.png" alt="Matematik Sayfa 2" loading="lazy">
+            <img src="assets/pdf_pages/matematik/page_2.png" alt="Matematik Sayfa 2" loading="lazy">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q6 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 6:</span> Tümler ve Bütünler Açılar (10 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q6.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('mat_sol6.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_mat_6')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Tümler açı: toplamı 90 derece, Bütünler açı: toplamı 180 derece..."></textarea>
-            <div id="pdf_sol_mat_6" class="q-solution-reveal">
-              <strong>✅ Resmi Çözüm:</strong> Ölçüleri toplamı 90° olan iki açıya tümler açılar, ölçüleri toplamı 180° olan iki açıya bütünler açılar denir. 35 derecenin tümleri: 90 - 35 = 55°, bütünleri: 180 - 35 = 145°.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_mat_6', 10, 10, this)">10 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_mat_6', 10, 5, this)">5 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_mat_6', 10, 0, this)">0 Puan</button>
-              </div>
-            </div>
-          </div>
+            
+    <div class="q-strip" id="q_strip_5">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 5</span>
+          <strong>Çemberin Elemanları</strong>
+          <span class="q-pts-pill">10 Puan</span>
         </div>
-
-        <!-- PAGE 3 & 4 -->
-        <div class="pdf-interactive-page">
-          <div class="page-banner" style="background:#047857;">
-            <span>📄 Orijinal Öğretmen Çözüm Anahtarı - Sayfa 3 & 4</span>
-            <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
-          </div>
-          <div class="pdf-image-wrap">
-            <img src="assets/img/matematik_p3.png" alt="Matematik Cevap Sayfa 3" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/matematik_p4.png" alt="Matematik Cevap Sayfa 4" loading="lazy">
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q5.mp3', 'q_strip_5', 'Soru 5. Aşağıda verilen çemberin şekillerle belirtilen elemanlarını yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol5.mp3', 'q_strip_5', 'Soru 5\'in çözümü. Çemberin elemanları: Çap, Yarıçap ve Merkez.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_5')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="a) Çap, b) Yarıçap, c) Merkez..."></textarea>
+      <div id="sol_reveal_5" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">a) <strong>Çap:</strong> Çemberin merkezinden geçen ve iki noktayı birleştiren en uzun doğru parçasıdır (2r).<br>b) <strong>Yarıçap:</strong> Merkezden çember üzerindeki herhangi bir noktaya olan uzaklıktır (r).<br>c) <strong>Merkez:</strong> Çemberin tam orta sabit noktasıdır (M).</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_5', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_5', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_5', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_6">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 6</span>
+          <strong>CD Doğru Parçasına A Noktasından Dikme Çizimi</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q6.mp3', 'q_strip_6', 'Soru 6. CD doğru parçasına A noktasından dikme çiziniz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol6.mp3', 'q_strip_6', 'Soru 6\'nın çözümü. Gönyenin dik kenarlarından biri CD doğrusunun üzerine yerleştirilir, diğer dik kenar A noktasına getirilerek aşağı doğru dikme doğru parçası çizilir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_6')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Nasıl çizileceğini açıklayınız..."></textarea>
+      <div id="sol_reveal_6" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Dikme Çizimi:</strong><br>Gönye kullanılarak A noktasından CD doğrusuna 90 derecelik dikme indirilir. Sembolle: <strong>[AH] ⊥ CD</strong>.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_6', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_6', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_6', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_7">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 7</span>
+          <strong>d Doğrusuna 2 cm Uzaklıkta Üç Nokta Belirleme</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q7.mp3', 'q_strip_7', 'Soru 7. d doğrusuna 2 santimetre uzaklıkta olan üç nokta belirleyiniz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol7.mp3', 'q_strip_7', 'Soru 7\'nin çözümü. d doğrusu üzerinde farklı yerlerden 2 santimetrelik dikmeler çıkılarak K, L, M noktaları işaretlenir. Bu noktalar d doğrusuna paralel bir doğru üzerinde yer alır.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="K, L, M noktalarının konumunu açıklayınız..."></textarea>
+      <div id="sol_reveal_7" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Çözüm:</strong><br>d doğrusuna dik doğrultuda 2 cm mesafede <strong>K, L, M</strong> noktaları işaretlenir. Bu üç nokta birleştirildiğinde d doğrusuna paralel yeni bir doğru oluşur.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_7', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_7', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_7', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_8">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 8</span>
+          <strong>Açıyı İsimlendirip Açıölçerle Ölçme</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q8.mp3', 'q_strip_8', 'Soru 8. Şekilde verilen açıyı isimlendirip açıölçerle ölçünüz ve ölçüsünü sembolle gösteriniz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol8.mp3', 'q_strip_8', 'Soru 8\'in çözümü. Açının ölçüsü 40 derecedir. Gösterimi m A B C açısı eşittir 40 derece.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_8')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Açının ismi ve ölçüsü: m(...) = ... derece"></textarea>
+      <div id="sol_reveal_8" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Ölçüm Sonucu:</strong><br>• Açının Adı: ABC açısı (B̂)<br>• Ölçüsü: <strong>40°</strong><br>• Sembolle Gösterimi: <strong>m(AB̂C) = 40°</strong> veya <strong>s(B̂) = 40°</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_8', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_8', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_8', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_9">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 9</span>
+          <strong>Aynı Kağıttaki İki Doğrunun Oluşturabileceği Durumlar</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q9.mp3', 'q_strip_9', 'Soru 9. Aynı kağıt üzerine çizilebilecek iki doğrunun oluşturabileceği tüm durumları çizerek yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol9.mp3', 'q_strip_9', 'Soru 9\'un çözümü. İki doğru paralel olabilir, tek bir noktada kesişebilir, dik kesişebilir veya çakışık olabilir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_9')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1. Paralel, 2. Kesişen, 3. Dik kesişen, 4. Çakışık..."></textarea>
+      <div id="sol_reveal_9" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>1. Paralel Doğrular:</strong> Hiçbir noktada kesişmezler (d // e).<br><strong>2. Kesişen Doğrular:</strong> Tek bir ortak noktada kesişirler.<br><strong>3. Dik Kesişen Doğrular:</strong> Aralarındaki açı 90° olarak kesişirler (d ⊥ e).<br><strong>4. Çakışık Doğrular:</strong> Tüm noktaları ortaktır, üst üste binerler.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_9', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_9', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_9', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_10">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 10</span>
+          <strong>Komşu Tümler ve Komşu Bütünler Açıları Bulma</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('mat_q10.mp3', 'q_strip_10', 'Soru 10. Komşu tümler ve komşu bütünler açılardan yararlanarak FUR ve DNY açılarının ölçüsünü bulunuz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('mat_sol10.mp3', 'q_strip_10', 'Soru 10\'un çözümü. Tümler açılar toplamı 90 derecedir: 90 eksi 40 eşittir 50 derece. Bütünler açılar toplamı 180 derecedir: 180 eksi 128 eşittir 52 derece.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_10')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="m(FUR) = 90 - 40 = ... , m(DNY) = 180 - 128 = ..."></textarea>
+      <div id="sol_reveal_10" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>1. Durum (Tümler Açılar - Toplam 90°):</strong><br>m(FÛR) = 90° - 40° = <strong>50°</strong><br><br><strong>2. Durum (Bütünler Açılar - Toplam 180°):</strong><br>m(DNY) = 180° - 128° = <strong>52°</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_10', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_10', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_10', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin: 32px 0;">
-        <button class="btn-start" style="padding: 16px 36px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
+      <div style="text-align: center; margin: 36px 0;">
+        <button class="btn-start" style="padding: 18px 42px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
           🏆 Matematik Sınav Notumu Hesapla
         </button>
       </div>
     </div>
 
-    <!-- TAB 2: SUMMARY HAP BİLGİLER -->
+    <!-- TAB 2: ANSWER KEY -->
+    <div id="answer-key-pane" class="tab-pane">
+      <div class="pdf-interactive-page">
+        <div class="page-banner" style="background:#047857;">
+          <span>📄 Orijinal Öğretmen Çözüm Anahtarı Sayfa 3 & 4</span>
+          <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
+        </div>
+        <div class="pdf-image-wrap">
+          <img src="assets/pdf_pages/matematik/page_3.png" alt="Matematik Cevap 3" loading="lazy">
+        </div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
+          <img src="assets/pdf_pages/matematik/page_4.png" alt="Matematik Cevap 4" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SUMMARY -->
     <div id="summary-pane" class="tab-pane">
       <div class="summary-cards">
         <div class="summary-card">
           <h4>📐 1. Geometrik Çizim Araçları</h4>
           <ul>
-            <li><strong>Cetvel:</strong> Düz çizgiler çizmek ve uzunluk ölçmek için kullanılır.</li>
-            <li><strong>İletki (Açıölçer):</strong> Açının kaç derece olduğunu ölçmek veya belirli derecede açı çizmek için kullanılır.</li>
-            <li><strong>Gönye:</strong> 90 derecelik dik açıları oluşturmak ve doğrulamak için kullanılır.</li>
-            <li><strong>Pergel:</strong> Çember ve yay çizmek, uzunlukları taşımak için kullanılır.</li>
+            <li><strong>Cetvel:</strong> Doğru parçası çizimi ve uzunluk ölçümü.</li>
+            <li><strong>Gönye:</strong> 90 derecelik diklik ve dikme çizimleri.</li>
+            <li><strong>İletki (Açıölçer):</strong> Açının derece cinsinden ölçümü (0° - 180°).</li>
+            <li><strong>Pergel:</strong> Belirli yarıçapta çember ve yay çizimi.</li>
           </ul>
         </div>
         <div class="summary-card">
-          <h4>📏 2. Doğru, Işın ve Doğru Parçası</h4>
+          <h4>📏 2. Tümler ve Bütünler Açılar</h4>
           <ul>
-            <li><strong>Doğru:</strong> İki ucu da sınırsız uzayan noktalar kümesi (AB doğrusu).</li>
-            <li><strong>Işın:</strong> Başlangıç noktası sabit, diğer ucu sınırsız uzar [AB ışını).</li>
-            <li><strong>Doğru Parçası:</strong> İki ucu da sınırlı olan çizgi [AB].</li>
-          </ul>
-        </div>
-        <div class="summary-card">
-          <h4>⚪ 3. Tümler ve Bütünler Açılar</h4>
-          <ul>
-            <li><strong>Tümler Açılar:</strong> Ölçüleri toplamı 90° olan iki açıdır.</li>
-            <li><strong>Bütünler Açılar:</strong> Ölçüleri toplamı 180° olan iki açıdır.</li>
+            <li><strong>Tümler Açılar:</strong> Ölçüleri toplamı 90°'dir. Örn: 40°'nin tümleri 50°'dir.</li>
+            <li><strong>Bütünler Açılar:</strong> Ölçüleri toplamı 180°'dir. Örn: 128°'nin bütünleri 52°'dir.</li>
           </ul>
         </div>
       </div>
@@ -217,7 +430,7 @@
       <div class="modal-content">
         <h2>🎉 Sınav Çalışması Tamamlandı!</h2>
         <div class="modal-score" id="finalScoreVal">100</div>
-        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Başarı Puanı / 100</p>
+        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Puan / 100</p>
         <p id="scoreFeedback" style="font-size: 1.05rem; line-height: 1.5; color: #334155;">Harika bir çalışma gerçekleştirdin!</p>
         <button class="btn-modal" onclick="portalApp.closeModal()">Kapat ve İncelemeye Devam Et</button>
       </div>
@@ -226,9 +439,9 @@
   
     <footer class="site-footer">
       <div class="container">
-        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">5. Sınıf 1. Dönem 1. Yazılı Akıllı Hazırlık Portalı</p>
-        <p style="margin-top: 4px;">Milli Eğitim Bakanlığı Müfredatı ile Tam Uyumlu Etkileşimli Çalışma & Sesli Çözüm Materyali</p>
-        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır • Telefon, Tablet, Akıllı TV ve Bilgisayar Uyumlu</p>
+        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">Akıllı Yazılıya Hazırlık Portalı</p>
+        <p style="margin-top: 4px;">Tüm Sorular Çözümlü • PDF Üzerinde Doğrudan Çalışma • Mobil, Bilgisayar, Tablet ve Smart TV Uyumlu</p>
+        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır</p>
       </div>
     </footer>
     

@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5. Sınıf Türkçe 1. Dönem 1. Yazılı - Orijinal PDF Üzerinde Çalışma</title>
+  <title>5. Sınıf Türkçe 1. Dönem 1. Yazılı - Tüm Sorular Çözümlü</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }</style>
 </head>
 <body class="theme-turkce">
   
     <header class="site-header">
       <div class="nav-bar">
         <a href="index.html" class="brand-link">
-          <span class="brand-badge">5. SINIF</span>
-          <span>Akıllı Yazılı Çalışma Portalı</span>
+          <span class="brand-badge">AKILLI PORTAL</span>
+          <span>Etkileşimli Yazılı Hazırlık</span>
         </a>
         <nav class="nav-links">
           <a href="index.html" class="nav-link">🏠 Ana Sayfa</a>
-<a href="turkce.html" class="nav-link active">📚 Türkçe</a>
-<a href="matematik.html" class="nav-link">📐 Matematik</a>
-<a href="fen-bilimleri.html" class="nav-link">🔬 Fen Bilimleri</a>
-<a href="sosyal-bilgiler.html" class="nav-link">🌍 Sosyal Bilgiler</a>
-<a href="din-kulturu.html" class="nav-link">🕌 Din Kültürü</a>
-<a href="ingilizce.html" class="nav-link">🇬🇧 İngilizce</a>
+<a href="turkce.html" class="nav-link active">📚 5. Sınıf Türkçe</a>
+<a href="matematik.html" class="nav-link">📐 5. Sınıf Matematik</a>
+<a href="fen-bilimleri.html" class="nav-link">🔬 5. Sınıf Fen</a>
+<a href="sosyal-bilgiler.html" class="nav-link">🌍 5. Sınıf Sosyal</a>
+<a href="din-kulturu.html" class="nav-link">🕌 5. Sınıf Din</a>
+<a href="ingilizce.html" class="nav-link">🇬🇧 5. Sınıf İngilizce</a>
+<a href="mebi-sorulari.html" class="nav-link">⭐ 7. Sınıf MEBİ Yazılıları</a>
 <a href="qr_giris.html" class="nav-link">📱 Ağ / TV Giriş</a>
 
         </nav>
@@ -36,8 +36,8 @@
   <main class="container">
     <div class="lesson-header">
       <div class="lesson-info">
-        <h1><span>📚</span> Türkçe 1. Dönem 1. Yazılı</h1>
-        <p>Orijinal Sınav Kağıdı Üzerinde Soru Soru Sesli Çözüm • Metinde Anlam • Söz Sanatları • Yazım Kuralları</p>
+        <h1><span>📚</span> 5. Sınıf Türkçe 1. Dönem 1. Yazılı</h1>
+        <p>Orijinal Sınav Kağıdı Üzerinde Soru Soru Çözüm • 6 Sorunun Tamamı • PC ve Mobilde Doğal Seslendirme</p>
       </div>
       <div class="score-box">
         <div class="score-val" id="currentScoreVal">0</div>
@@ -45,191 +45,276 @@
       </div>
     </div>
 
-    <!-- Master Audio Bar -->
+    <!-- Audio Player Bar -->
     <div class="audio-bar">
       <div class="audio-bar-info">
         <div class="audio-icon-pulse">🔊</div>
         <div>
-          <strong style="display:block; font-size:0.95rem;">Türkçe Doğal Sesli Öğretmen Anlatımı</strong>
-          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır (Dinlemek için ses butonlarına dokunun)</span>
+          <strong style="display:block; font-size:0.95rem;">Türkçe Sesli Rehber (PC & Mobil Uyumlu)</strong>
+          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır — Dinlemek için ses butonlarına tıklayın</span>
         </div>
       </div>
       <div class="audio-controls">
         <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Duraklat / Devam Et</button>
         <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Durdur</button>
-        <button class="btn-audio primary" onclick="portalApp.playAudio('turkce_summary.mp3')">📢 Sınav Konu Özetini Dinle</button>
+        <button class="btn-audio primary" onclick="portalApp.playAudio('turkce_summary.mp3', null, '5. Sınıf Türkçe 1. Dönem 1. Yazılı Konu Özeti. Metinde anlam, söz sanatlarından kişileştirme, belirli tarihlerde ve coğrafi adlarda büyük harflerin yazımı konuları sınavın temelini oluşturur.')">📢 Konu Özetini Dinle</button>
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Tabs -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Çalış & Dinle</button>
+      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Tüm Soruları Çöz</button>
+      <button class="tab-btn" data-tab="answer-key-pane">🔑 Öğretmen Cevap Anahtarı</button>
       <button class="tab-btn" data-tab="summary-pane">💡 Sınavda Çıkacak Hap Bilgiler</button>
     </div>
 
-    <!-- TAB 1: DIRECT PDF WORKBENCH -->
+    <!-- TAB 1: WORKBENCH -->
     <div id="pdf-pane" class="tab-pane active">
       <div class="interactive-pdf-container">
         
-        <!-- PAGE 1 -->
+        <!-- Sayfa 1 -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 1 (Soru 1, Soru 2, Soru 3)</span>
+            <span>📄 Orijinal Soru Kağıdı - Sayfa 1 (Soru 1, Soru 2, Soru 3)</span>
             <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/turkce_p1.png" alt="Türkçe Sayfa 1" loading="eager">
+            <img src="assets/pdf_pages/turkce/page_1.png" alt="Türkçe Sayfa 1" loading="eager">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q1 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 1:</span> Metinden Sözcük Bulma (15 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q1.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('turkce_sol1.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_tr_1')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Cevabını buraya yazabilirsin (1: İcat, 2: Yosun, 3: Mıknatıs)..."></textarea>
-            <div id="pdf_sol_tr_1" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> 1. İcat (Buluş) • 2. Yosun • 3. Mıknatıs (Demirkapan). Metindeki bağlamdan hareketle doğru kelimeler tespit edilir.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_tr_1', 15, 15, this)">15 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_tr_1', 15, 8, this)">8 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_tr_1', 15, 0, this)">0 Puan</button>
-              </div>
-            </div>
-
-            <hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">
-
-            <!-- Q2 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 2:</span> Metnin Konusu ve Ana Fikri (20 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q2.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('turkce_sol2.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_tr_2')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Metnin ana fikrini ve konusunu buraya yazınız..."></textarea>
-            <div id="pdf_sol_tr_2" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> Konu: Yapay zekâ veri merkezlerinin aşırı elektrik ve su tüketimiyle çevreye olan etkileri.<br>
-              Ana Fikir: Teknolojik gelişmeler insanlığa kolaylık sağlarken doğal kaynaklarımızın tükenmemesi için enerji ve su verimliliği gözetilmelidir.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_tr_2', 20, 20, this)">20 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_tr_2', 20, 10, this)">10 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_tr_2', 20, 0, this)">0 Puan</button>
-              </div>
-            </div>
+            
+    <div class="q-strip" id="q_strip_1">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 1</span>
+          <strong>Pusula Metninden Sözcük Bulma</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q1.mp3', 'q_strip_1', 'Soru 1. Pusula metninde geçen; buluş, yosun ve mıknatıs tanımlarına karşılık gelen sözcükleri yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('turkce_sol1.mp3', 'q_strip_1', 'Soru 1\'in çözümü. 1: İcat, 2: Yosun, 3: Mıknatıs.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_1')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: İcat, 2: Yosun, 3: Mıknatıs..."></textarea>
+      <div id="sol_reveal_1" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. <strong>İcat</strong> (Bilinmeyen yeni bir bulguya ulaşma, buluş)<br>2. <strong>Yosun</strong> (Suda veya taşların üzerinde yetişen ilkel bitkiler)<br>3. <strong>Mıknatıs</strong> (Demiri çeken oksit; demirkapan)</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_1', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_1', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_1', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_2">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 2</span>
+          <strong>Yapay Zeka ve Çevre Metninden Sonuç Çıkarma</strong>
+          <span class="q-pts-pill">20 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q2.mp3', 'q_strip_2', 'Soru 2. Yapay zekânın çevre üzerindeki elektrik ve su tüketimi etkisini anlatan metinden çıkardığınız sonucu yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('turkce_sol2.mp3', 'q_strip_2', 'Soru 2\'nin çözümü. Yapay zeka teknolojileri kullanılırken su ve enerji israfını önlemek için net ve doğrudan ifadeler kullanılmalıdır.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_2')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Metinden çıkardığınız sonucu kendi cümlelerinizle yazınız..."></textarea>
+      <div id="sol_reveal_2" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Metinden Çıkarılan Sonuç:</strong><br>Yapay zekâ sunucularının soğutulması yüksek miktarda su ve elektrik tüketimine neden olur. Bu yüzden gereksiz uzun sohbetlerden kaçınmalı, yapay zekâya doğrudan ve net komutlar vererek doğal kaynakların israfını önlemeliyiz.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_2', 20, 20, this)">20 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_2', 20, 10, this)">10 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_2', 20, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_3">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 3</span>
+          <strong>Satranç Metninin Anahtar Kelimeleri</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q3.mp3', 'q_strip_3', 'Soru 3. Satrancın zihinsel gelişime faydalarını anlatan metnin anahtar kelimelerini belirleyerek iki tanesini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('turkce_sol3.mp3', 'q_strip_3', 'Soru 3\'ün çözümü. Anahtar kelimeler: Satranç, zihinsel gelişim, planlama veya strateji.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_3')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="İki anahtar kelime yazınız (Örn: Satranç, Zihinsel gelişim)..."></textarea>
+      <div id="sol_reveal_3" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Anahtar Kelimeler:</strong><br>• <strong>Satranç</strong><br>• <strong>Zihinsel / Bilişsel Gelişim</strong> (veya: <em>Stratejik Düşünme, Planlama</em> kabul edilir).</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_3', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_3', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_3', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
-        <!-- PAGE 2 -->
+        <!-- Sayfa 2 -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 2 (Soru 4, Soru 5)</span>
+            <span>📄 Orijinal Soru Kağıdı - Sayfa 2 (Soru 4, Soru 5, Soru 6)</span>
             <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/turkce_p2.png" alt="Türkçe Sayfa 2" loading="lazy">
+            <img src="assets/pdf_pages/turkce/page_2.png" alt="Türkçe Sayfa 2" loading="lazy">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q4 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 4:</span> Kişileştirme Sanatına Örnekler (15 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q4.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('turkce_sol4.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_tr_4')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="İki adet kişileştirme cümlesi yazınız..."></textarea>
-            <div id="pdf_sol_tr_4" class="q-solution-reveal">
-              <strong>✅ Örnek Cevap:</strong> 1. "Rüzgâr gece boyunca pencerelere kızgın kızgın vurdu." • 2. "Güneş sabah yüzünü gösterdiğinde çiçekler sevinçle gülümsedi."
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_tr_4', 15, 15, this)">15 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_tr_4', 15, 8, this)">8 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_tr_4', 15, 0, this)">0 Puan</button>
-              </div>
-            </div>
-
-            <hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">
-
-            <!-- Q5 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 5:</span> Yazım Kurallarını Örneklendirme (30 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q5.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('turkce_sol5.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_tr_5')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="I. Tarih cümlesi, II. Coğrafi tür adı cümlesi, III. Cadde/Sokak cümlesi..."></textarea>
-            <div id="pdf_sol_tr_5" class="q-solution-reveal">
-              <strong>✅ Örnek Cümleler:</strong><br>
-              I: "Kardeşim <strong>12 Mayıs 2018 Cumartesi</strong> günü doğdu."<br>
-              II: "Tatilimizi <strong>Van Gölü</strong> kıyısında geçirdik."<br>
-              III: "Teyzem <strong>Atatürk Bulvarı, Menekşe Sokak</strong>ta oturuyor."
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_tr_5', 30, 30, this)">30 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_tr_5', 30, 15, this)">15 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_tr_5', 30, 0, this)">0 Puan</button>
-              </div>
-            </div>
-          </div>
+            
+    <div class="q-strip" id="q_strip_4">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 4</span>
+          <strong>Söz Sanatları: Kişileştirmeye İki Örnek</strong>
+          <span class="q-pts-pill">15 Puan</span>
         </div>
-
-        <!-- PAGE 3 & 4 -->
-        <div class="pdf-interactive-page">
-          <div class="page-banner" style="background:#047857;">
-            <span>📄 Orijinal Öğretmen Çözüm Anahtarı - Sayfa 3 & 4</span>
-            <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
-          </div>
-          <div class="pdf-image-wrap">
-            <img src="assets/img/turkce_p3.png" alt="Türkçe Cevap Sayfa 3" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/turkce_p4.png" alt="Türkçe Cevap Sayfa 4" loading="lazy">
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q4.mp3', 'q_strip_4', 'Soru 4. İnsana ait özelliklerin doğaya veya cansız varlıklara aktarıldığı kişileştirme sanatına iki örnek veriniz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('turkce_sol4.mp3', 'q_strip_4', 'Soru 4\'ün çözümü. Örnek bir: Rüzgar pencereleri öfkeyle dövüyordu. Örnek iki: Papatyalar sabah güneşine gülümsedi.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_4')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1. Cümle: ... 
+2. Cümle: ..."></textarea>
+      <div id="sol_reveal_4" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Örnek Cümleler (Öğrenci Modeli):</strong><br>1. <em>'Rüzgâr bütün gece penceremize öfkeyle vurdu.'</em> (Öfkelenmek insana aittir, rüzgara verilmiştir.)<br>2. <em>'Sabah güneş açınca çiçekler neşeyle birbirine fısıldadı.'</em> (Fısıldaşmak insana aittir.)</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_4', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_4', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_4', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_5">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 5</span>
+          <strong>Kritik Yazım Kurallarını Örneklendirme</strong>
+          <span class="q-pts-pill">20 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q5.mp3', 'q_strip_5', 'Soru 5. Belirli tarihler, coğrafi ikinci yer adları ve cadde sokak kurallarını örnekleyen birer cümle yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('turkce_sol5.mp3', 'q_strip_5', 'Soru 5\'in çözümü. 1: 12 Mayıs 2018 Cumartesi günü doğdu. 2: Van Gölü kıyısına gittik. 3: Atatürk Caddesi, Zambak Sokakta oturuyoruz.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_5')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="I. Tarih cümlesi:
+II. Göl/Dağ/Nehir cümlesi:
+III. Cadde/Sokak cümlesi:"></textarea>
+      <div id="sol_reveal_5" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>I. Belirli Tarih Kuralı:</strong> 'Kardeşim <strong>12 Mayıs 2018 Cumartesi</strong> günü dünyaya geldi.'<br><strong>II. Coğrafi Yer Adı:</strong> 'Tatilimizi <strong>Van Gölü</strong> kıyısında geçirdik.'<br><strong>III. Cadde ve Sokak:</strong> 'Okulumuz <strong>Cumhuriyet Bulvarı, Menekşe Sokak</strong> üzerindedir.'</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_5', 20, 20, this)">20 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_5', 20, 10, this)">10 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_5', 20, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_6">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 6</span>
+          <strong>Bitki veya Hayvan Betimlemesi</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('turkce_q6.mp3', 'q_strip_6', 'Soru 6. İlginç bulduğunuz bir bitki veya hayvanın belirgin özelliklerini betimleyiniz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('turkce_sol6.mp3', 'q_strip_6', 'Soru 6\'nın çözümü. Örneğin bukalemun renk değiştirme özelliği ve bağımsız hareket eden gözleriyle mükemmel bir uyum sergiler.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_6')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Seçtiğiniz bir canlıyı renk, şekil ve hareket özellikleriyle anlatınız..."></textarea>
+      <div id="sol_reveal_6" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Örnek Betimleme (Bukalemun):</strong><br>Bukalemunlar, bulundukları ortama göre saniyeler içinde renk değiştirebilen olağanüstü sürüngenlerdir. Birbirinden bağımsız 360 derece dönebilen gözleri ve vücut boyundan daha uzun yapışkan dilleri sayesinde avlarını hiç hareket etmeden yakalayabilirler.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_6', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_6', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_6', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin: 32px 0;">
-        <button class="btn-start" style="padding: 16px 36px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
+      <div style="text-align: center; margin: 36px 0;">
+        <button class="btn-start" style="padding: 18px 42px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
           🏆 Türkçe Sınav Notumu Hesapla
         </button>
       </div>
     </div>
 
-    <!-- TAB 2: SUMMARY HAP BİLGİLER -->
+    <!-- TAB 2: ANSWER KEY -->
+    <div id="answer-key-pane" class="tab-pane">
+      <div class="pdf-interactive-page">
+        <div class="page-banner" style="background:#047857;">
+          <span>📄 Orijinal Öğretmen Cevap Anahtarı Sayfa 3 & 4</span>
+          <span style="font-size:0.85rem; opacity:0.85;">Resmi MEB / Yayın Çözümleri</span>
+        </div>
+        <div class="pdf-image-wrap">
+          <img src="assets/pdf_pages/turkce/page_3.png" alt="Türkçe Cevap 3" loading="lazy">
+        </div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
+          <img src="assets/pdf_pages/turkce/page_4.png" alt="Türkçe Cevap 4" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SUMMARY -->
     <div id="summary-pane" class="tab-pane">
       <div class="summary-cards">
         <div class="summary-card">
           <h4>📖 1. Sözcükte Anlam ve Bağlam</h4>
           <ul>
-            <li><strong>Gerçek Anlam:</strong> Kelimenin akla gelen ilk temel anlamıdır.</li>
-            <li><strong>Mecaz Anlam:</strong> Gerçek anlamdan tamamen uzaklaşan soyut anlamdır.</li>
-            <li><strong>Terim Anlam:</strong> Bilim, sanat ve spora özgü kavramlardır.</li>
+            <li><strong>Gerçek Anlam:</strong> Kelimenin ilk temel anlamı.</li>
+            <li><strong>Mecaz Anlam:</strong> Soyutlaşmış ve gerçek anlamından uzaklaşmış kullanım.</li>
+            <li><strong>Terim Anlam:</strong> Belirli bir bilim, meslek ve sanata özgü kavramlar (icat, yosun, mıknatıs).</li>
           </ul>
         </div>
         <div class="summary-card">
           <h4>🎭 2. Söz Sanatları: Kişileştirme (Teşhis)</h4>
           <ul>
-            <li>İnsana ait özelliklerin hayvanlara veya cansız varlıklara verilmesidir.</li>
-            <li>Örnek: "Güneş bize sıcacık tebessüm ediyordu."</li>
+            <li>İnsana özgü niteliklerin (sevinme, kızma, gülme) insan dışı varlıklara verilmesidir.</li>
           </ul>
         </div>
         <div class="summary-card">
-          <h4>✍️ 3. Kritik Yazım Kuralları</h4>
+          <h4>✍️ 3. Büyük Harflerin Kullanımı</h4>
           <ul>
-            <li>Belirli tarih bildiren gün ve aylar büyük harfle başlar: <em>29 Ekim 1923, 14 Haziran Pazartesi</em>.</li>
-            <li>Özel isimden sonra gelen dağ, göl, nehir isimleri büyük başlar: <em>Van Gölü, Ağrı Dağı</em>.</li>
-            <li>Cadde, sokak, meydan, bulvar kelimeleri büyük harfle yazılır: <em>İstiklal Caddesi</em>.</li>
+            <li>Belirli tarih: 29 Ekim 1923 Cuma günü.</li>
+            <li>Yer adı tür bildirimi: Van Gölü, Ağrı Dağı, Tuna Nehri.</li>
+            <li>Mahalle, cadde, sokak: Cumhuriyet Mahallesi, Menekşe Sokak.</li>
           </ul>
         </div>
       </div>
@@ -242,7 +327,7 @@
       <div class="modal-content">
         <h2>🎉 Sınav Çalışması Tamamlandı!</h2>
         <div class="modal-score" id="finalScoreVal">100</div>
-        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Başarı Puanı / 100</p>
+        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Puan / 100</p>
         <p id="scoreFeedback" style="font-size: 1.05rem; line-height: 1.5; color: #334155;">Harika bir çalışma gerçekleştirdin!</p>
         <button class="btn-modal" onclick="portalApp.closeModal()">Kapat ve İncelemeye Devam Et</button>
       </div>
@@ -251,9 +336,9 @@
   
     <footer class="site-footer">
       <div class="container">
-        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">5. Sınıf 1. Dönem 1. Yazılı Akıllı Hazırlık Portalı</p>
-        <p style="margin-top: 4px;">Milli Eğitim Bakanlığı Müfredatı ile Tam Uyumlu Etkileşimli Çalışma & Sesli Çözüm Materyali</p>
-        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır • Telefon, Tablet, Akıllı TV ve Bilgisayar Uyumlu</p>
+        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">Akıllı Yazılıya Hazırlık Portalı</p>
+        <p style="margin-top: 4px;">Tüm Sorular Çözümlü • PDF Üzerinde Doğrudan Çalışma • Mobil, Bilgisayar, Tablet ve Smart TV Uyumlu</p>
+        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır</p>
       </div>
     </footer>
     

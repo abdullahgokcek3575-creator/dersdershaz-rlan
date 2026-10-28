@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5. Sınıf Sosyal Bilgiler 1. Dönem 1. Yazılı - Orijinal PDF Üzerinde Çalışma</title>
+  <title>5. Sınıf Sosyal Bilgiler 1. Dönem 1. Yazılı - 7 Sorunun Tamamı Çözümlü</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }</style>
 </head>
 <body class="theme-sosyal">
   
     <header class="site-header">
       <div class="nav-bar">
         <a href="index.html" class="brand-link">
-          <span class="brand-badge">5. SINIF</span>
-          <span>Akıllı Yazılı Çalışma Portalı</span>
+          <span class="brand-badge">AKILLI PORTAL</span>
+          <span>Etkileşimli Yazılı Hazırlık</span>
         </a>
         <nav class="nav-links">
           <a href="index.html" class="nav-link">🏠 Ana Sayfa</a>
-<a href="turkce.html" class="nav-link">📚 Türkçe</a>
-<a href="matematik.html" class="nav-link">📐 Matematik</a>
-<a href="fen-bilimleri.html" class="nav-link">🔬 Fen Bilimleri</a>
-<a href="sosyal-bilgiler.html" class="nav-link active">🌍 Sosyal Bilgiler</a>
-<a href="din-kulturu.html" class="nav-link">🕌 Din Kültürü</a>
-<a href="ingilizce.html" class="nav-link">🇬🇧 İngilizce</a>
+<a href="turkce.html" class="nav-link">📚 5. Sınıf Türkçe</a>
+<a href="matematik.html" class="nav-link">📐 5. Sınıf Matematik</a>
+<a href="fen-bilimleri.html" class="nav-link">🔬 5. Sınıf Fen</a>
+<a href="sosyal-bilgiler.html" class="nav-link active">🌍 5. Sınıf Sosyal</a>
+<a href="din-kulturu.html" class="nav-link">🕌 5. Sınıf Din</a>
+<a href="ingilizce.html" class="nav-link">🇬🇧 5. Sınıf İngilizce</a>
+<a href="mebi-sorulari.html" class="nav-link">⭐ 7. Sınıf MEBİ Yazılıları</a>
 <a href="qr_giris.html" class="nav-link">📱 Ağ / TV Giriş</a>
 
         </nav>
@@ -36,8 +36,8 @@
   <main class="container">
     <div class="lesson-header">
       <div class="lesson-info">
-        <h1><span>🌍</span> Sosyal Bilgiler 1. Dönem 1. Yazılı</h1>
-        <p>Orijinal Sınav Kağıdı Üzerinde Soru Soru Sesli Çözüm • Hak & Sorumluluk • Çocuk Hakları • Uygarlıklar</p>
+        <h1><span>🌍</span> 5. Sınıf Sosyal Bilgiler 1. Dönem 1. Yazılı</h1>
+        <p>Roller & Sorumluluklar • Kültürel Miras • Sadaka Taşı • Tekalif-i Milliye • 7 Sorunun Tamamı</p>
       </div>
       <div class="score-box">
         <div class="score-val" id="currentScoreVal">0</div>
@@ -45,156 +45,296 @@
       </div>
     </div>
 
-    <!-- Master Audio Bar -->
+    <!-- Audio Bar -->
     <div class="audio-bar">
       <div class="audio-bar-info">
         <div class="audio-icon-pulse">🔊</div>
         <div>
-          <strong style="display:block; font-size:0.95rem;">Sosyal Bilgiler Doğal Sesli Öğretmen Anlatımı</strong>
-          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır (Dinlemek için ses butonlarına dokunun)</span>
+          <strong style="display:block; font-size:0.95rem;">Sosyal Bilgiler Sesli Rehber</strong>
+          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır — Dinlemek için butonlara tıklayın</span>
         </div>
       </div>
       <div class="audio-controls">
         <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Duraklat / Devam Et</button>
         <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Durdur</button>
-        <button class="btn-audio primary" onclick="portalApp.playAudio('sosyal_summary.mp3')">📢 Sınav Konu Özetini Dinle</button>
+        <button class="btn-audio primary" onclick="portalApp.playAudio('sosyal_summary.mp3', null, '5. Sınıf Sosyal Bilgiler 1. Dönem 1. Yazılı Konu Özeti. Roller ve sorumluluklar, zeybek, ebru, mahya gibi kültürel zenginliklerimiz, Osmanlıdaki sadaka taşı geleneği, Tekalifi Milliye emirleri ve şehirlerimizin göreceli konum özellikleri sınav konularımızdır.')">📢 Konu Özetini Dinle</button>
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Tabs -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Çalış & Dinle</button>
+      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Tüm Soruları Çöz</button>
+      <button class="tab-btn" data-tab="answer-key-pane">🔑 Resmi Çözüm Anahtarı</button>
       <button class="tab-btn" data-tab="summary-pane">💡 Sınavda Çıkacak Hap Bilgiler</button>
     </div>
 
-    <!-- TAB 1: DIRECT PDF WORKBENCH -->
+    <!-- TAB 1: WORKBENCH -->
     <div id="pdf-pane" class="tab-pane active">
       <div class="interactive-pdf-container">
         
-        <!-- PAGE 1 -->
+        <!-- Sayfa 1 -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 1 (Soru 1, Soru 2, Soru 3)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
+            <span>📄 Soru Kağıdı Sayfa 1 (Soru 1, 2, 3, 4)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">55 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/sosyal_p1.png" alt="Sosyal Bilgiler Sayfa 1" loading="eager">
+            <img src="assets/pdf_pages/sosyal/page_1.png" alt="Sosyal Sayfa 1" loading="eager">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q1 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 1:</span> Hak ve Sorumluluk İlişkisi (20 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q1.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('sosyal_sol1.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_sos_1')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Hak ve sorumluluk arasındaki farkı örneklerle yazınız..."></textarea>
-            <div id="pdf_sol_sos_1" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> Hak: Kanunların ve toplumun bireye tanıdığı yetkidir (örneğin eğitim alma, sağlık hakkı). Sorumluluk ise bireyin üzerine düşen görevleri yerine getirmesidir (ödevlerini yapmak, dersi dinlemek).
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_sos_1', 20, 20, this)">20 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_sos_1', 20, 10, this)">10 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_sos_1', 20, 0, this)">0 Puan</button>
-              </div>
-            </div>
-
-            <hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">
-
-            <!-- Q2 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 2:</span> Çocuk Hakları Sözleşmesi (20 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q2.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('sosyal_sol2.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_sos_2')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="18 yaşına kadar her bireyin çocuk sayılması ve temel haklarını yazınız..."></textarea>
-            <div id="pdf_sol_sos_2" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> 18 yaşına kadar her birey çocuk sayılır. Yaşama, sağlıklı bir çevrede büyüme, eğitim alma, oyun oynama ve fikirlerini özgürce ifade etme temel haklarındandır.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_sos_2', 20, 20, this)">20 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_sos_2', 20, 10, this)">10 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_sos_2', 20, 0, this)">0 Puan</button>
-              </div>
-            </div>
+            
+    <div class="q-strip" id="q_strip_1">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 1</span>
+          <strong>Hak ve Rol Tanımları</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q1.mp3', 'q_strip_1', 'Soru 1. Öğrencilerle ilgilenmek ve ev işlerinde yardımcı olmayı isteyen rollerin adlarını yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('sosyal_sol1.mp3', 'q_strip_1', 'Soru 1\'in çözümü. 1: Öğretmen, 2: Anne veya Baba rolü.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_1')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: Öğretmen, 2: Anne / Baba..."></textarea>
+      <div id="sol_reveal_1" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. Öğrencilerle ilgilenmek: <strong>Öğretmen rolü</strong><br>2. Ev işlerinde çocukların yardımını istemek: <strong>Anne / Baba rolü</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_1', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_1', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_1', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_2">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 2</span>
+          <strong>Osman Furkan'ın Gruplardaki Rolleri</strong>
+          <span class="q-pts-pill">20 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q2.mp3', 'q_strip_2', 'Soru 2. Osman Furkan\'ın içinde bulunduğu gruplardaki rollerini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('sosyal_sol2.mp3', 'q_strip_2', 'Soru 2\'nin çözümü. Ailede: Çocuk ve abi. Okulda: Öğrenci ve sınıf arkadaşı. Futbol takımında: Takım kaptanı veya lideri.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_2')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Ailede: ... , Okulda: ... , Takımda: ..."></textarea>
+      <div id="sol_reveal_2" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">• <strong>Aile Grubunda:</strong> Evlat (Çocuk) ve Abi rolü<br>• <strong>Okul Grubunda (5. Sınıf):</strong> Öğrenci ve Sınıf Arkadaşı rolü<br>• <strong>Futbol Takımında:</strong> Takım Kaptanı (Lideri) rolü</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_2', 20, 20, this)">20 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_2', 20, 10, this)">10 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_2', 20, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_3">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 3</span>
+          <strong>Mangala Oyununun Farklı Kıtalarında Oynanması</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q3.mp3', 'q_strip_3', 'Soru 3. Mangala oyununun Asya, Afrika ve Amerika\'da oynanması neyin göstergesidir?')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('sosyal_sol3.mp3', 'q_strip_3', 'Soru 3\'ün çözümü. Kültürel ögelerin evrenselleştiğinin ve farklı toplumlar arasında kültürel etkileşim olduğunun göstergesidir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_3')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Kültürel etkileşim ve ortak miras açısından açıklayınız..."></textarea>
+      <div id="sol_reveal_3" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Açıklama:</strong><br>Kültürel miras ögelerimizin evrenselleştiğini, farklı coğrafya ve kıtalardaki toplumları ortak bir eğlence ve zekâ oyunu etrafında birleştirdiğini, <strong>kültürel etkileşim ve zenginliğin</strong> kanıtı olduğunu gösterir.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_3', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_3', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_3', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_4">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 4</span>
+          <strong>Kültürel Değerlerimiz ve Geleneklerimiz</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q4.mp3', 'q_strip_4', 'Soru 4. Metindeki boşluklara gelmesi gereken kültürel özelliklerimizi yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('sosyal_sol4.mp3', 'q_strip_4', 'Soru 4\'ün çözümü. 1: Zeybek, 2: Ebru sanatı, 3: Mahya, 4: Mantı, 5: Cumba.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_4')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: Zeybek, 2: Ebru, 3: Mahya, 4: Mantı, 5: Cumba..."></textarea>
+      <div id="sol_reveal_4" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. Cepken giyilen halk oyunu: <strong>Zeybek</strong><br>2. Su üzerine yağlı boya sanatı: <strong>Ebru</strong><br>3. İki minare arasına asılan ışıklı yazı: <strong>Mahya</strong><br>4. Kayseri'nin ünlü yemeği: <strong>Mantı</strong><br>5. Evlerin dışarı çıkıntı yapan oda bölümü: <strong>Cumba</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_4', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_4', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_4', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
-        <!-- PAGE 2 -->
+        <!-- Sayfa 2 -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 2 (Soru 4, Soru 5)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
+            <span>📄 Soru Kağıdı Sayfa 2 (Soru 5, 6, 7)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">45 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/sosyal_p2.png" alt="Sosyal Bilgiler Sayfa 2" loading="lazy">
+            <img src="assets/pdf_pages/sosyal/page_2.png" alt="Sosyal Sayfa 2" loading="lazy">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q5 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 5:</span> Tarihi Eserler ve Doğal Varlıklar (20 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q5.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('sosyal_sol5.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_sos_5')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Tarihi eser ve doğal varlık farkını açıklayıp örnekler veriniz..."></textarea>
-            <div id="pdf_sol_sos_5" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> Doğal Varlık: Doğada kendiliğinden insan eli değmeden oluşan güzelliklerdir (Pamukkale Travertenleri, Düden Şelalesi, Peri Bacaları). Tarihi Eser: Geçmiş uygarlıklar tarafından inşa edilen yapay mirastır (Topkapı Sarayı, Efes Antik Kenti, Selimiye Camii).
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_sos_5', 20, 20, this)">20 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_sos_5', 20, 10, this)">10 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_sos_5', 20, 0, this)">0 Puan</button>
-              </div>
-            </div>
-          </div>
+            
+    <div class="q-strip" id="q_strip_5">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 5</span>
+          <strong>Sadaka Taşı Uygulaması ve Amacı</strong>
+          <span class="q-pts-pill">15 Puan</span>
         </div>
-
-        <!-- PAGE 3 & 4 -->
-        <div class="pdf-interactive-page">
-          <div class="page-banner" style="background:#047857;">
-            <span>📄 Orijinal Öğretmen Çözüm Anahtarı - Sayfa 3 & 4</span>
-            <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
-          </div>
-          <div class="pdf-image-wrap">
-            <img src="assets/img/sosyal_p3.png" alt="Sosyal Bilgiler Cevap Sayfa 3" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/sosyal_p4.png" alt="Sosyal Bilgiler Cevap Sayfa 4" loading="lazy">
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q5.mp3', 'q_strip_5', 'Soru 5. Selçuklu ve Osmanlı döneminde cami ve çeşme yanlarına konan taşın adı ve amacı nedir?')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('sosyal_sol5.mp3', 'q_strip_5', 'Soru 5\'in çözümü. Adı sadaka taşıdır. Amacı ihtiyaç sahiplerini rencide etmeden, gizlice yardım ulaştırmaktır.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_5')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Uygulamanın adı: ... 
+Amacı: ..."></textarea>
+      <div id="sol_reveal_5" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">• <strong>Uygulamanın Adı:</strong> <strong>Sadaka Taşı</strong><br>• <strong>Yapılış Amacı:</strong> İhtiyaç sahiplerini ve yoksul insanları incitmeden, mahcup etmeden, gece karanlığında gizlice ihtiyaçları kadar parayı almalarını sağlayarak toplumsal dayanışmayı en asil şekilde yaşatmaktır.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_5', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_5', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_5', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_6">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 6</span>
+          <strong>Tekalif-i Milliye Emirleri</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q6.mp3', 'q_strip_6', 'Soru 6. Milli Mücadele döneminde ordunun ihtiyaçlarını karşılamak için çıkarılan emirlere ne denir ve amacı nedir?')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('sosyal_sol6.mp3', 'q_strip_6', 'Soru 6\'nın çözümü. Tekalif-i Milliye Emirleridir. Ordunun giyecek, yiyecek, cephane ve taşıt ihtiyaçlarını milletin dayanışmasıyla karşılamaktır.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_6')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Emirlerin adı: ... 
+Amacı: ..."></textarea>
+      <div id="sol_reveal_6" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">• <strong>Emirlerin Adı:</strong> <strong>Tekâlif-i Millîye Emirleri</strong><br>• <strong>Amacı:</strong> Sakarya Meydan Muharebesi öncesinde ordunun giyecek, yiyecek, silah, cephane ve taşıt ihtiyaçlarını halkın fedakârlığı ve yardımlaşması ile temin etmektir.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_6', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_6', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_6', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_7">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 7</span>
+          <strong>Şehirlerin Göreceli Konum Özellikleri</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('sosyal_q7.mp3', 'q_strip_7', 'Soru 7. Zonguldak, Nevşehir ve Mersin illerinin göreceli konum özelliklerini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('sosyal_sol7.mp3', 'q_strip_7', 'Soru 7\'nin çözümü. 1: Yeraltı maden kaynakları. 2: Doğal ve tarihi turizm güzellikleri. 3: Ekonomik faaliyetler, tarım ve liman ticareti.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: Yeraltı kaynakları, 2: Doğal güzellikler, 3: Ekonomik faaliyetler..."></textarea>
+      <div id="sol_reveal_7" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. Zonguldak (taşkömürü & petrol): <strong>Yeraltı Kaynakları (Madenler)</strong><br>2. Nevşehir (Peribacaları, Göreme): <strong>Doğal ve Tarihî Güzellikler (Turizm)</strong><br>3. Mersin (Uluslararası liman, muz ve limon üretimi): <strong>Ekonomik Faaliyetler, Ulaşım ve Tarım</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_7', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_7', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_7', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin: 32px 0;">
-        <button class="btn-start" style="padding: 16px 36px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
+      <div style="text-align: center; margin: 36px 0;">
+        <button class="btn-start" style="padding: 18px 42px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
           🏆 Sosyal Bilgiler Sınav Notumu Hesapla
         </button>
       </div>
     </div>
 
-    <!-- TAB 2: SUMMARY HAP BİLGİLER -->
+    <!-- TAB 2: ANSWER KEY -->
+    <div id="answer-key-pane" class="tab-pane">
+      <div class="pdf-interactive-page">
+        <div class="page-banner" style="background:#047857;">
+          <span>📄 Orijinal Öğretmen Çözüm Anahtarı Sayfa 3 & 4</span>
+          <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
+        </div>
+        <div class="pdf-image-wrap">
+          <img src="assets/pdf_pages/sosyal/page_3.png" alt="Sosyal Cevap 3" loading="lazy">
+        </div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
+          <img src="assets/pdf_pages/sosyal/page_4.png" alt="Sosyal Cevap 4" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SUMMARY -->
     <div id="summary-pane" class="tab-pane">
       <div class="summary-cards">
         <div class="summary-card">
-          <h4>👥 1. Roller, Haklar ve Sorumluluklar</h4>
+          <h4>👥 1. Hak, Sorumluluk ve Roller</h4>
           <ul>
-            <li>Bir kişi aynı anda birden fazla gruba dahil olabilir (ailede çocuk, okulda öğrenci, takımda kaleci).</li>
-            <li>Her rolün getirdiği farklı haklar ve sorumluluklar vardır.</li>
+            <li><strong>Hak:</strong> Kanunların bireye tanıdığı yetkilerdir (sağlık, eğitim hakkı).</li>
+            <li><strong>Sorumluluk:</strong> Bireyin üzerine düşen görevleri yapmasıdır.</li>
+            <li>Bir kişi aynı anda ailede çocuk, okulda öğrenci, sporda kaleci olabilir.</li>
           </ul>
         </div>
         <div class="summary-card">
-          <h4>🕊️ 2. Çocuk Hakları Sözleşmesi</h4>
+          <h4>🤝 2. Dayanışma Kurumları</h4>
           <ul>
-            <li>UNICEF tarafından desteklenir ve 18 yaş altındaki her bireyi kapsar.</li>
-            <li>Hiçbir ayrım gözetmeksizin tüm çocuklar eşit haklara sahiptir.</li>
+            <li><strong>Sadaka Taşı:</strong> İhtiyaç sahiplerini incitmeden yapılan gizli yardımlaşmadır.</li>
+            <li><strong>Tekâlif-i Millîye:</strong> Millî Mücadele'de ordunun donatılması için halkın yaptığı fedakârlıklardır.</li>
           </ul>
         </div>
       </div>
@@ -207,7 +347,7 @@
       <div class="modal-content">
         <h2>🎉 Sınav Çalışması Tamamlandı!</h2>
         <div class="modal-score" id="finalScoreVal">100</div>
-        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Başarı Puanı / 100</p>
+        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Puan / 100</p>
         <p id="scoreFeedback" style="font-size: 1.05rem; line-height: 1.5; color: #334155;">Harika bir çalışma gerçekleştirdin!</p>
         <button class="btn-modal" onclick="portalApp.closeModal()">Kapat ve İncelemeye Devam Et</button>
       </div>
@@ -216,9 +356,9 @@
   
     <footer class="site-footer">
       <div class="container">
-        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">5. Sınıf 1. Dönem 1. Yazılı Akıllı Hazırlık Portalı</p>
-        <p style="margin-top: 4px;">Milli Eğitim Bakanlığı Müfredatı ile Tam Uyumlu Etkileşimli Çalışma & Sesli Çözüm Materyali</p>
-        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır • Telefon, Tablet, Akıllı TV ve Bilgisayar Uyumlu</p>
+        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">Akıllı Yazılıya Hazırlık Portalı</p>
+        <p style="margin-top: 4px;">Tüm Sorular Çözümlü • PDF Üzerinde Doğrudan Çalışma • Mobil, Bilgisayar, Tablet ve Smart TV Uyumlu</p>
+        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır</p>
       </div>
     </footer>
     

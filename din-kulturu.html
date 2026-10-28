@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5. Sınıf Din Kültürü 1. Dönem 1. Yazılı - Orijinal PDF Üzerinde Çalışma</title>
+  <title>5. Sınıf Din Kültürü 1. Dönem 1. Yazılı - Tüm Sorular Çözümlü</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }</style>
 </head>
 <body class="theme-din">
   
     <header class="site-header">
       <div class="nav-bar">
         <a href="index.html" class="brand-link">
-          <span class="brand-badge">5. SINIF</span>
-          <span>Akıllı Yazılı Çalışma Portalı</span>
+          <span class="brand-badge">AKILLI PORTAL</span>
+          <span>Etkileşimli Yazılı Hazırlık</span>
         </a>
         <nav class="nav-links">
           <a href="index.html" class="nav-link">🏠 Ana Sayfa</a>
-<a href="turkce.html" class="nav-link">📚 Türkçe</a>
-<a href="matematik.html" class="nav-link">📐 Matematik</a>
-<a href="fen-bilimleri.html" class="nav-link">🔬 Fen Bilimleri</a>
-<a href="sosyal-bilgiler.html" class="nav-link">🌍 Sosyal Bilgiler</a>
-<a href="din-kulturu.html" class="nav-link active">🕌 Din Kültürü</a>
-<a href="ingilizce.html" class="nav-link">🇬🇧 İngilizce</a>
+<a href="turkce.html" class="nav-link">📚 5. Sınıf Türkçe</a>
+<a href="matematik.html" class="nav-link">📐 5. Sınıf Matematik</a>
+<a href="fen-bilimleri.html" class="nav-link">🔬 5. Sınıf Fen</a>
+<a href="sosyal-bilgiler.html" class="nav-link">🌍 5. Sınıf Sosyal</a>
+<a href="din-kulturu.html" class="nav-link active">🕌 5. Sınıf Din</a>
+<a href="ingilizce.html" class="nav-link">🇬🇧 5. Sınıf İngilizce</a>
+<a href="mebi-sorulari.html" class="nav-link">⭐ 7. Sınıf MEBİ Yazılıları</a>
 <a href="qr_giris.html" class="nav-link">📱 Ağ / TV Giriş</a>
 
         </nav>
@@ -36,8 +36,8 @@
   <main class="container">
     <div class="lesson-header">
       <div class="lesson-info">
-        <h1><span>🕌</span> Din Kültürü ve Ahlak Bilgisi 1. Dönem 1. Yazılı</h1>
-        <p>Orijinal Sınav Kağıdı Üzerinde Soru Soru Sesli Çözüm • Allah İnancı • Evrendeki Düzen • İhlas Suresi</p>
+        <h1><span>🕌</span> 5. Sınıf Din Kültürü 1. Dönem 1. Yazılı</h1>
+        <p>Allah İnancı • Evrendeki Düzen • Esma-i Hüsna • İhlas Suresi • Tüm Bölümler A, B, C, D, E</p>
       </div>
       <div class="score-box">
         <div class="score-val" id="currentScoreVal">0</div>
@@ -45,108 +45,243 @@
       </div>
     </div>
 
-    <!-- Master Audio Bar -->
+    <!-- Audio Bar -->
     <div class="audio-bar">
       <div class="audio-bar-info">
         <div class="audio-icon-pulse">🔊</div>
         <div>
-          <strong style="display:block; font-size:0.95rem;">Din Kültürü Doğal Sesli Öğretmen Anlatımı</strong>
-          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır (Dinlemek için ses butonlarına dokunun)</span>
+          <strong style="display:block; font-size:0.95rem;">Din Kültürü Sesli Rehber</strong>
+          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır — Dinlemek için butonlara tıklayın</span>
         </div>
       </div>
       <div class="audio-controls">
         <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Duraklat / Devam Et</button>
         <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Durdur</button>
-        <button class="btn-audio primary" onclick="portalApp.playAudio('din_summary.mp3')">📢 Sınav Konu Özetini Dinle</button>
+        <button class="btn-audio primary" onclick="portalApp.playAudio('din_summary.mp3', null, '5. Sınıf Din Kültürü 1. Dönem 1. Yazılı Konu Özeti. Evrendeki mükemmel ahenk, Allahın varlığı ve birliği yani tevhit, Semî, Basîr, Alîm ve Kadir isimleri ile İhlas suresinin anlamı ve okunuşu sınav konularımızdır.')">📢 Konu Özetini Dinle</button>
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Tabs -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Çalış & Dinle</button>
+      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Tüm Bölümleri Çöz</button>
+      <button class="tab-btn" data-tab="answer-key-pane">🔑 Resmi Çözüm Anahtarı</button>
       <button class="tab-btn" data-tab="summary-pane">💡 Sınavda Çıkacak Hap Bilgiler</button>
     </div>
 
-    <!-- TAB 1: DIRECT PDF WORKBENCH -->
+    <!-- TAB 1: WORKBENCH -->
     <div id="pdf-pane" class="tab-pane active">
       <div class="interactive-pdf-container">
         
-        <!-- PAGE 1 -->
+        <!-- Sayfa 2 (A, B, C) -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 1 & 2 (Sorular & Boşluk Doldurma)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
+            <span>📄 Sınav Kağıdı Sayfa 2 (Bölüm A, B, C)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">55 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/din_p1.png" alt="Din Kültürü Sayfa 1" loading="eager">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/din_p2.png" alt="Din Kültürü Sayfa 2" loading="lazy">
+            <img src="assets/pdf_pages/din/page_2.png" alt="Din Sayfa 2" loading="eager">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q1 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 1:</span> Evrendeki Ölçü ve Düzen (20 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din_q1.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('din_sol1.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_din_1')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Allah'ın evreni bir ölçü ve düzen içinde yarattığına dair 3 örnek veriniz..."></textarea>
-            <div id="pdf_sol_din_1" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> 1. Gece ve gündüzün ardı ardına gelmesi, 2. Mevsimlerin kusursuz bir sırayla birbirini takip etmesi, 3. Güneş sistemindeki gezegenlerin birbirine çarpmadan yörüngelerinde dönmesi, 4. Canlıların solunum için oksijene olan dengesi.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_din_1', 20, 20, this)">20 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_din_1', 20, 10, this)">10 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_din_1', 20, 0, this)">0 Puan</button>
-              </div>
-            </div>
+            
+    <div class="q-strip" id="q_strip_A">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru A</span>
+          <strong>Evrendeki Düzen ve Dengeye 3 Örnek</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din_q1.mp3', 'q_strip_A', 'Bölüm A. Allah\'ın evreni bir denge ve düzen içinde yaratmasına üç örnek yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din_sol1.mp3', 'q_strip_A', 'Bölüm A\'nın çözümü. 1: Gece ve gündüzün düzenli birbirini izlemesi. 2: Mevsimlerin değişmesi. 3: Yağmurla bitkilerin büyümesi.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_A')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: ...
+2: ...
+3: ..."></textarea>
+      <div id="sol_reveal_A" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. <strong>Gece ve gündüzün düzenli olarak birbirini izlemesi.</strong><br>2. <strong>Mevsimlerin belli bir ahenk ve düzen içinde değişmesi.</strong><br>3. <strong>Yağmurla birlikte bitkilerin büyüyüp besin üretmesi.</strong><br><em>(Gezegenlerin yörüngeleri veya canlıların solunum dengesi de kabul edilir.)</em></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_A', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_A', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_A', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_B">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru B</span>
+          <strong>Allah'ın Güzel İsimleri (Esmâ-i Hüsnâ)</strong>
+          <span class="q-pts-pill">30 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din_q2.mp3', 'q_strip_B', 'Bölüm B. Ayetlerdeki ifadelerin Allah\'ın hangi ismine işaret ettiğini yazınız: Bilir, İşitir, Görür, Gücü yeter.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din_sol2.mp3', 'q_strip_B', 'Bölüm B\'nin çözümü. Her şeyi bilen: Alîm. Her şeyi işiten: Semî. Her şeyi gören: Basîr. Her şeye gücü yeten: Kadir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_B')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Alîm, Semî, Basîr, Kadir..."></textarea>
+      <div id="sol_reveal_B" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">• '…O, göklerde ve yerde olan her şeyi bilir.' → <strong>Alîm</strong><br>• 'Allah her şeyi işitmekte ve her şeyi görmektedir.' → <strong>Semî</strong> ve <strong>Basîr</strong><br>• 'Her şeyi işiten ve bilen odur.' → <strong>Semî</strong> ve <strong>Alîm</strong><br>• 'O, her şeye hakkıyla gücü yetendir.' → <strong>Kadir</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_B', 30, 30, this)">30 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_B', 30, 15, this)">15 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_B', 30, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_C">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru C</span>
+          <strong>Esmâyıhüsna Kavramının Anlamı</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din_q3.mp3', 'q_strip_C', 'Bölüm C. Sinan\'ın annesine sorduğu \'Esmâyıhüsna\' ifadesinin anlamı nedir?')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din_sol3.mp3', 'q_strip_C', 'Bölüm C\'nin çözümü. Allah\'ın en güzel 99 ismi anlamına gelir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_C')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Allah'ın en güzel isimleri..."></textarea>
+      <div id="sol_reveal_C" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Doğru Cevap:</strong><br><strong>Allah'ın en güzel isimleri (Esmâ-i Hüsnâ)</strong>.<br>Yüce Allah'ın Kur'an ve hadislerde bildirilen 99 güzel ismine verilen addır.</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_C', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_C', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_C', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
-        <!-- PAGE 3 & 4 (Official Answers) -->
+        <!-- Sayfa 3 (D, E) -->
         <div class="pdf-interactive-page">
-          <div class="page-banner" style="background:#047857;">
-            <span>📄 Orijinal Öğretmen Çözüm Anahtarı - Sayfa 3, 4 & 5</span>
-            <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
+          <div class="page-banner">
+            <span>📄 Sınav Kağıdı Sayfa 3 (Bölüm D, E)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">45 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/din_p3.png" alt="Din Kültürü Cevap Sayfa 3" loading="lazy">
+            <img src="assets/pdf_pages/din/page_3.png" alt="Din Sayfa 3" loading="lazy">
           </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/din_p4.png" alt="Din Kültürü Cevap Sayfa 4" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/din_p5.png" alt="Din Kültürü Cevap Sayfa 5" loading="lazy">
+          <div class="pdf-question-controls">
+            
+    <div class="q-strip" id="q_strip_D">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru D</span>
+          <strong>Doğru - Yanlış İfadeleri</strong>
+          <span class="q-pts-pill">35 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din_q4.mp3', 'q_strip_D', 'Bölüm D. 7 adet dini ifadenin doğru mu yanlış mı olduğunu belirtiniz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din_sol4.mp3', 'q_strip_D', 'Bölüm D\'nin çözümü. 1 Doğru, 2 Yanlış çünkü İhlas suresinde peygamberler değil tevhitten bahsedilir, 3 Doğru, 4 Doğru, 5 Yanlış birden çok yaratıcı olsa kargaşa olurdu, 6 Yanlış samed ismi ihtiyaç duyulmayan demektir, 7 Doğru.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_D')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: D, 2: Y, 3: D, 4: D, 5: Y, 6: Y, 7: D..."></textarea>
+      <div id="sol_reveal_D" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. Her varlığın bir amaca yönelik yaratılması Allah'ın birliğine delildir. → <strong>DOĞRU ✓</strong><br>2. İhlas suresinde bazı peygamberlerden bahsedilir. → <strong>YANLIŞ ❌</strong> (Tevhitten bahseder)<br>3. Tevhit inancı İslam'ın özünü oluşturan esaslardandır. → <strong>DOĞRU ✓</strong><br>4. Rahman ve Rahim merhameti ifade eder. → <strong>DOĞRU ✓</strong><br>5. Birden fazla yaratıcı olsaydı evrende düzen olurdu. → <strong>YANLIŞ ❌</strong> (Kargaşa çıkardı)<br>6. Ehad ismi Allah'ın hiçbir şeye ihtiyacı olmadığını ifade eder. → <strong>YANLIŞ ❌</strong> (Bu Samed'dir, Ehad tektir demektir)<br>7. İhlas samimiyet ve temizlik anlamına gelir. → <strong>DOĞRU ✓</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_D', 35, 35, this)">35 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_D', 35, 17, this)">17 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_D', 35, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_E">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru E</span>
+          <strong>İhlas Suresi Boşluk Doldurma</strong>
+          <span class="q-pts-pill">10 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('din_q5.mp3', 'q_strip_E', 'Bölüm E. İhlas suresinin okunuşundaki boşlukları doldurunuz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('din_sol5.mp3', 'q_strip_E', 'Bölüm E\'nin çözümü. 1: ehad, 2: Allahüssamed, 3: yelid ve yûled, 4: ve lem yeküllehû.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_E')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: ehad, 2: Allahüssamed, 3: yelid - yûled, 4: Ve lem..."></textarea>
+      <div id="sol_reveal_E" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Bismillahirrahmanirrahim</strong><br>1. Kul hüvellâhü <strong>ehad</strong><br>2. <strong>Allâhü's</strong>-samed<br>3. Lem <strong>yelid</strong> ve lem <strong>yûled</strong><br>4. <strong>Ve lem</strong> yekün lehû küfüven ehad</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_E', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_E', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_E', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin: 32px 0;">
-        <button class="btn-start" style="padding: 16px 36px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
+      <div style="text-align: center; margin: 36px 0;">
+        <button class="btn-start" style="padding: 18px 42px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
           🏆 Din Kültürü Sınav Notumu Hesapla
         </button>
       </div>
     </div>
 
-    <!-- TAB 2: SUMMARY HAP BİLGİLER -->
+    <!-- TAB 2: ANSWER KEY -->
+    <div id="answer-key-pane" class="tab-pane">
+      <div class="pdf-interactive-page">
+        <div class="page-banner" style="background:#047857;">
+          <span>📄 Orijinal Öğretmen Çözüm Anahtarı Sayfa 4 & 5</span>
+          <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
+        </div>
+        <div class="pdf-image-wrap">
+          <img src="assets/pdf_pages/din/page_4.png" alt="Din Cevap 4" loading="lazy">
+        </div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
+          <img src="assets/pdf_pages/din/page_5.png" alt="Din Cevap 5" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SUMMARY -->
     <div id="summary-pane" class="tab-pane">
       <div class="summary-cards">
         <div class="summary-card">
-          <h4>🌌 1. Evrendeki Mükemmel Uyum</h4>
+          <h4>🌟 1. Esmâ-i Hüsnâ (Allah'ın Güzel İsimleri)</h4>
           <ul>
-            <li>Evrendeki her şey bir ölçü, düzen ve ahenk içinde yaratılmıştır (Kamer Suresi, 49. ayet).</li>
-            <li>Su döngüsü, yer çekimi kanunu ve atmosferin koruyucu kalkanı bu düzenin kanıtlarıdır.</li>
+            <li><strong>Alîm:</strong> Her şeyi bilen.</li>
+            <li><strong>Semî:</strong> Her şeyi işiten.</li>
+            <li><strong>Basîr:</strong> Her şeyi gören.</li>
+            <li><strong>Kadir:</strong> Her şeye gücü yeten.</li>
+            <li><strong>Rahman & Rahim:</strong> Merhamet eden ve esirgeyen.</li>
           </ul>
         </div>
         <div class="summary-card">
           <h4>📖 2. İhlas Suresi ve Tevhit</h4>
           <ul>
-            <li>Tevhit: Allah'ın bir ve tek olduğuna, hiçbir denginin bulunmadığına inanmaktır.</li>
-            <li>İhlas Suresi tevhidi en özlü anlatan suredir: "De ki: O Allah tektir. Samed'dir. Doğurmamış ve doğmamıştır."</li>
+            <li><strong>Tevhit:</strong> Allah'ın bir ve tek olduğuna iman etmektir. Zıttı şirk koşmaktır.</li>
+            <li><strong>Ehad:</strong> Allah birdir, tektir.</li>
+            <li><strong>Samed:</strong> Herkes O'na muhtaç, O hiçbir şeye muhtaç değildir.</li>
           </ul>
         </div>
       </div>
@@ -159,7 +294,7 @@
       <div class="modal-content">
         <h2>🎉 Sınav Çalışması Tamamlandı!</h2>
         <div class="modal-score" id="finalScoreVal">100</div>
-        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Başarı Puanı / 100</p>
+        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Puan / 100</p>
         <p id="scoreFeedback" style="font-size: 1.05rem; line-height: 1.5; color: #334155;">Harika bir çalışma gerçekleştirdin!</p>
         <button class="btn-modal" onclick="portalApp.closeModal()">Kapat ve İncelemeye Devam Et</button>
       </div>
@@ -168,9 +303,9 @@
   
     <footer class="site-footer">
       <div class="container">
-        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">5. Sınıf 1. Dönem 1. Yazılı Akıllı Hazırlık Portalı</p>
-        <p style="margin-top: 4px;">Milli Eğitim Bakanlığı Müfredatı ile Tam Uyumlu Etkileşimli Çalışma & Sesli Çözüm Materyali</p>
-        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır • Telefon, Tablet, Akıllı TV ve Bilgisayar Uyumlu</p>
+        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">Akıllı Yazılıya Hazırlık Portalı</p>
+        <p style="margin-top: 4px;">Tüm Sorular Çözümlü • PDF Üzerinde Doğrudan Çalışma • Mobil, Bilgisayar, Tablet ve Smart TV Uyumlu</p>
+        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır</p>
       </div>
     </footer>
     

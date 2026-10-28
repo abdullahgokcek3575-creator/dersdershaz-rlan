@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5. Sınıf Fen Bilimleri 1. Dönem 1. Yazılı - Orijinal PDF Üzerinde Çalışma</title>
+  <title>5. Sınıf Fen Bilimleri 1. Dönem 1. Yazılı - Tüm Sorular Çözümlü</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }</style>
 </head>
 <body class="theme-fen">
   
     <header class="site-header">
       <div class="nav-bar">
         <a href="index.html" class="brand-link">
-          <span class="brand-badge">5. SINIF</span>
-          <span>Akıllı Yazılı Çalışma Portalı</span>
+          <span class="brand-badge">AKILLI PORTAL</span>
+          <span>Etkileşimli Yazılı Hazırlık</span>
         </a>
         <nav class="nav-links">
           <a href="index.html" class="nav-link">🏠 Ana Sayfa</a>
-<a href="turkce.html" class="nav-link">📚 Türkçe</a>
-<a href="matematik.html" class="nav-link">📐 Matematik</a>
-<a href="fen-bilimleri.html" class="nav-link active">🔬 Fen Bilimleri</a>
-<a href="sosyal-bilgiler.html" class="nav-link">🌍 Sosyal Bilgiler</a>
-<a href="din-kulturu.html" class="nav-link">🕌 Din Kültürü</a>
-<a href="ingilizce.html" class="nav-link">🇬🇧 İngilizce</a>
+<a href="turkce.html" class="nav-link">📚 5. Sınıf Türkçe</a>
+<a href="matematik.html" class="nav-link">📐 5. Sınıf Matematik</a>
+<a href="fen-bilimleri.html" class="nav-link active">🔬 5. Sınıf Fen</a>
+<a href="sosyal-bilgiler.html" class="nav-link">🌍 5. Sınıf Sosyal</a>
+<a href="din-kulturu.html" class="nav-link">🕌 5. Sınıf Din</a>
+<a href="ingilizce.html" class="nav-link">🇬🇧 5. Sınıf İngilizce</a>
+<a href="mebi-sorulari.html" class="nav-link">⭐ 7. Sınıf MEBİ Yazılıları</a>
 <a href="qr_giris.html" class="nav-link">📱 Ağ / TV Giriş</a>
 
         </nav>
@@ -36,8 +36,8 @@
   <main class="container">
     <div class="lesson-header">
       <div class="lesson-info">
-        <h1><span>🔬</span> Fen Bilimleri 1. Dönem 1. Yazılı</h1>
-        <p>Orijinal Sınav Kağıdı Üzerinde Soru Soru Sesli Çözüm • Güneş & Ay • Ay'ın Evreleri • Dinamometre</p>
+        <h1><span>🔬</span> 5. Sınıf Fen Bilimleri 1. Dönem 1. Yazılı</h1>
+        <p>Güneş, Dünya ve Ay'ın Hareketleri • Dinamometre ile Kuvvet Ölçümü • 7 Sorunun Tamamı Çözümlü</p>
       </div>
       <div class="score-box">
         <div class="score-val" id="currentScoreVal">0</div>
@@ -45,166 +45,314 @@
       </div>
     </div>
 
-    <!-- Master Audio Bar -->
+    <!-- Audio Bar -->
     <div class="audio-bar">
       <div class="audio-bar-info">
         <div class="audio-icon-pulse">🔊</div>
         <div>
-          <strong style="display:block; font-size:0.95rem;">Fen Bilimleri Doğal Sesli Öğretmen Anlatımı</strong>
-          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır (Dinlemek için ses butonlarına dokunun)</span>
+          <strong style="display:block; font-size:0.95rem;">Fen Bilimleri Sesli Rehber</strong>
+          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Hazır — Dinlemek için butonlara tıklayın</span>
         </div>
       </div>
       <div class="audio-controls">
         <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Duraklat / Devam Et</button>
         <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Durdur</button>
-        <button class="btn-audio primary" onclick="portalApp.playAudio('fen_summary.mp3')">📢 Sınav Konu Özetini Dinle</button>
+        <button class="btn-audio primary" onclick="portalApp.playAudio('fen_summary.mp3', null, '5. Sınıf Fen Bilimleri 1. Dönem 1. Yazılı Konu Özeti. Güneş gazlardan oluşur ve saat yönünün tersine 25 günde döner. Ayda atmosfer yoktur. Ayın ana evreleri yeni ay, ilk dördün, dolunay ve son dördündür. Kuvvet birimi Newton olup dinamometre yayındaki uzama uygulanan kuvvetle doğru orantılıdır.')">📢 Konu Özetini Dinle</button>
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Tabs -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Çalış & Dinle</button>
+      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Tüm Soruları Çöz</button>
+      <button class="tab-btn" data-tab="answer-key-pane">🔑 Resmi Çözüm Anahtarı</button>
       <button class="tab-btn" data-tab="summary-pane">💡 Sınavda Çıkacak Hap Bilgiler</button>
     </div>
 
-    <!-- TAB 1: DIRECT PDF WORKBENCH -->
+    <!-- TAB 1: WORKBENCH -->
     <div id="pdf-pane" class="tab-pane active">
       <div class="interactive-pdf-container">
         
-        <!-- PAGE 1 -->
+        <!-- Sayfa 1 -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 1 (Soru 1, Soru 2, Soru 3)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
+            <span>📄 Soru Kağıdı Sayfa 1 (Soru 1, 2, 3, 4)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">60 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/fen_p1.png" alt="Fen Sayfa 1" loading="eager">
+            <img src="assets/pdf_pages/fen/page_1.png" alt="Fen Sayfa 1" loading="eager">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q1 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 1:</span> Güneş'in Temel Özellikleri (10 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q1.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('fen_sol1.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_fen_1')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Güneş'in 5 özelliğini maddeler halinde yazınız..."></textarea>
-            <div id="pdf_sol_fen_1" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> 1. Şekli küreseldir. 2. Sıcak gazlardan (hidrojen ve helyum) oluşur. 3. Dünyamızın ısı ve ışık kaynağıdır. 4. Dünyamıza en yakın yıldızdır. 5. Kendi ekseni etrafında saat yönünün tersine döner (yaklaşık 25 gün).
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_fen_1', 10, 10, this)">10 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_fen_1', 10, 5, this)">5 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_fen_1', 10, 0, this)">0 Puan</button>
-              </div>
-            </div>
-
-            <hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">
-
-            <!-- Q2 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 2:</span> Ay'ın Yapısı ve Yaşam Şartları (15 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q2.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('fen_sol2.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_fen_2')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Ay'da hava olayları neden görülmez ve Ay'a giderken ne götürülmelidir?"></textarea>
-            <div id="pdf_sol_fen_2" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> A) Atmosfer olmadığı için rüzgâr, yağmur, kar gibi hava olayları görülmez; gece-gündüz sıcaklık farkı aşırıdır; ses iletilmez.<br>
-              B) Ay'da yaşayabilmek için: Oksijen tüpü, uzay kıyafeti, su ve besin götürülmelidir.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_fen_2', 15, 15, this)">15 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_fen_2', 15, 8, this)">8 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_fen_2', 15, 0, this)">0 Puan</button>
-              </div>
-            </div>
+            
+    <div class="q-strip" id="q_strip_1">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 1</span>
+          <strong>Güneş'in 5 Temel Özelliği</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q1.mp3', 'q_strip_1', 'Soru 1. Görselleri inceleyerek Güneş\'in özelliklerinden 5 tanesini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('fen_sol1.mp3', 'q_strip_1', 'Soru 1\'in çözümü. 1: Dünyaya en yakın yıldızdır. 2: Isı ve ışık kaynağımızdır. 3: Çok sıcak gazlardan oluşur. 4: Şekli küreseldir. 5: Kendi ekseni etrafında saat yönünün tersine döner.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_1')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: ...
+2: ...
+3: ...
+4: ...
+5: ..."></textarea>
+      <div id="sol_reveal_1" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. <strong>Dünya'ya en yakın yıldızdır.</strong><br>2. <strong>Isı ve ışık kaynağımızdır.</strong><br>3. <strong>Sıcak gazlardan (hidrojen ve helyum) oluşur.</strong><br>4. <strong>Şekli küreye benzer.</strong><br>5. <strong>Kendi ekseni etrafında saat yönünün tersine döner</strong> (yaklaşık 25 gün).</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_1', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_1', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_1', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_2">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 2</span>
+          <strong>Pepee ve Ninesi: Ay'ın Atmosfersizliği ve Yaşam</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q2.mp3', 'q_strip_2', 'Soru 2. Ay\'da atmosfer olmadığı için Dünya\'daki hangi olaylar görülmez ve Ay\'a giderken ne götürülmelidir?')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('fen_sol2.mp3', 'q_strip_2', 'Soru 2\'nin çözümü. A şıkkı: Yağmur, rüzgar gibi hava olayları görülmez, ses iletilmez. B şıkkı: Oksijen tüpü, uzay giysisi, su ve besin götürülmelidir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_2')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="a) Görülmeyen olaylar: ...
+b) Götürülecekler: ..."></textarea>
+      <div id="sol_reveal_2" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>a) Ay'da Meydana Gelmeyen Olaylar:</strong><br>• Yağmur, kar, fırtına gibi hava olayları gerçekleşmez.<br>• Rüzgâr oluşmaz.<br>• Ses yayılmaz (uzay boşluğu).<br><br><strong>b) Dünya'dan Götürülmesi Gerekenler:</strong><br>• Oksijen tüpü / hava<br>• Su ve besin maddeleri<br>• Özel koruyucu uzay giysisi</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_2', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_2', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_2', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_3">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 3</span>
+          <strong>Dünya ve Ay'ın Hareket Süreleri</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q3.mp3', 'q_strip_3', 'Soru 3. Ay\'ın dolanma yönü ve süreleri: a) Dolanma yönü, b) Dolanma süresi, c) Kendi ekseni etrafında dönme süresi.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('fen_sol3.mp3', 'q_strip_3', 'Soru 3\'ün çözümü. Dolanma yönü saat yönünün tersinedir yani batıdan doğuya. Dolanma süresi yaklaşık 27 gün 8 saattir. Kendi etrafında dönme süresi de yaklaşık 27 gün 8 saattir.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_3')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="a) Yön: ...
+b) Dolanma süresi: ...
+c) Dönme süresi: ..."></textarea>
+      <div id="sol_reveal_3" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">a) <strong>Dolanma Yönü:</strong> Saat yönünün tersine (batıdan doğuya doğru).<br>b) <strong>Dünya Etrafında Dolanma Süresi:</strong> Yaklaşık <strong>27 gün 8 saat</strong>.<br>c) <strong>Kendi Ekseni Etrafında Dönme Süresi:</strong> Yaklaşık <strong>27 gün 8 saat</strong>.<br><em>Not: İki süre eşit olduğu için Dünya'dan Ay'ın hep aynı yüzü görünür!</em></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_3', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_3', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_3', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_4">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 4</span>
+          <strong>Ay'ın Evreleri (Ana ve Ara Evreler)</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q4.mp3', 'q_strip_4', 'Soru 4. Ay\'ın Dünya\'dan gözlemlenen evrelerinin adını, ana ve ara evrelerini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('fen_sol4.mp3', 'q_strip_4', 'Soru 4\'ün çözümü. 1: Yeni ay, 2: Hilal, 3: İlk dördün, 4: Şişkin ay, 5: Dolunay, 6: Şişkin ay, 7: Son dördün, 8: Hilal. Ana evreler: Yeni ay, İlk dördün, Dolunay, Son dördün.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_4')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="Ana evreler: ...
+Ara evreler: ..."></textarea>
+      <div id="sol_reveal_4" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>a) Kutucuklar:</strong> 1: Yeni Ay, 2: Hilal, 3: İlk Dördün, 4: Şişkin Ay, 5: Dolunay, 6: Şişkin Ay, 7: Son Dördün, 8: Hilal<br><strong>b) Ana Evreler:</strong> <em>Yeni Ay, İlk Dördün, Dolunay, Son Dördün</em><br><strong>c) Ara Evreler:</strong> <em>Hilal, Şişkin Ay</em></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_4', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_4', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_4', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
-        <!-- PAGE 2 -->
+        <!-- Sayfa 2 -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Orijinal Sınav Kağıdı - Sayfa 2 (Soru 4 - 8)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1. Dönem 1. Yazılı</span>
+            <span>📄 Soru Kağıdı Sayfa 2 (Soru 5, 6, 7)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">40 Puan</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/fen_p2.png" alt="Fen Sayfa 2" loading="lazy">
+            <img src="assets/pdf_pages/fen/page_2.png" alt="Fen Sayfa 2" loading="lazy">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q6 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Soru 6:</span> Dinamometre ile Kuvvet Ölçümü (15 Puan)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q6.mp3')">🔊 Soruyu Dinle</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('fen_sol6.mp3')">🎙️ Çözümü Dinle</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_fen_6')">✅ Çözümü Aç / Kapat</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Kuvvetin birimi ve dinamometredeki yay uzama ilişkisini yazınız..."></textarea>
-            <div id="pdf_sol_fen_6" class="q-solution-reveal">
-              <strong>✅ Resmi Cevap:</strong> Kuvvetin birimi Newton'dur (N). Dinamometre içindeki yayın uzama miktarı uygulanan kuvvetle doğru orantılıdır; kuvvet arttıkça uzama miktarı da artar.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_fen_6', 15, 15, this)">15 Puan (Tam)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_fen_6', 15, 8, this)">8 Puan</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_fen_6', 15, 0, this)">0 Puan</button>
-              </div>
-            </div>
-          </div>
+            
+    <div class="q-strip" id="q_strip_5">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 5</span>
+          <strong>Ay'ın 1, 3, 5, 7 Konumlarındaki Görünümü</strong>
+          <span class="q-pts-pill">10 Puan</span>
         </div>
-
-        <!-- PAGE 3 & 4 -->
-        <div class="pdf-interactive-page">
-          <div class="page-banner" style="background:#047857;">
-            <span>📄 Orijinal Öğretmen Çözüm Anahtarı - Sayfa 3 & 4</span>
-            <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
-          </div>
-          <div class="pdf-image-wrap">
-            <img src="assets/img/fen_p3.png" alt="Fen Cevap Sayfa 3" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/fen_p4.png" alt="Fen Cevap Sayfa 4" loading="lazy">
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q5.mp3', 'q_strip_5', 'Soru 5. Ay 1, 3, 5 ve 7 numaralı konumlardayken Dünya\'dan görünümünü yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('fen_sol5.mp3', 'q_strip_5', 'Soru 5\'in çözümü. 1 konumunda Yeni ay görünmez. 3 konumunda İlk dördün düz D harfi. 5 konumunda Dolunay tamamen parlak. 7 konumunda Son dördün ters D harfi.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_5')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: Yeni ay, 3: İlk dördün, 5: Dolunay, 7: Son dördün..."></textarea>
+      <div id="sol_reveal_5" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">• <strong>1 Konumu:</strong> <strong>Yeni Ay</strong> (Karanlık görünür, Dünya'dan seçilemez).<br>• <strong>3 Konumu:</strong> <strong>İlk Dördün</strong> (Ay'ın sağ yarısı aydınlık, düz 'D' harfi).<br>• <strong>5 Konumu:</strong> <strong>Dolunay</strong> (Ay'ın Dünya'ya bakan yüzü tamamen aydınlık daire).<br>• <strong>7 Konumu:</strong> <strong>Son Dördün</strong> (Ay'ın sol yarısı aydınlık, ters 'D' harfi).</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_5', 10, 10, this)">10 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_5', 10, 5, this)">5 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_5', 10, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_6">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 6</span>
+          <strong>Güneş, Dünya ve Ay'ın Hareket Süreleri</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q6.mp3', 'q_strip_6', 'Soru 6. Görselde K, L, M, N, O harfleriyle belirtilen hareketlerin adlarını ve sürelerini yazınız.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('fen_sol6.mp3', 'q_strip_6', 'Soru 6\'nın çözümü. K Güneşin dönmesi 25 gün. L Dünyanın dolanması 365 gün 6 saat. M Ayın dönmesi 27 gün 8 saat. N Ayın dolanması 27 gün 8 saat. O Dünyanın dönmesi 24 saat.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_6')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="K: Güneş dönmesi ...
+L: Dünya dolanması ...
+M: Ay dönmesi ...
+N: Ay dolanması ...
+O: Dünya dönmesi ..."></textarea>
+      <div id="sol_reveal_6" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Hareketler ve Tamamlanma Süreleri:</strong><br>• <strong>K:</strong> Güneş'in kendi ekseninde dönmesi → <strong>Yaklaşık 25 gün</strong><br>• <strong>L:</strong> Dünya'nın Güneş etrafında dolanması → <strong>365 gün 6 saat (1 yıl)</strong><br>• <strong>M:</strong> Ay'ın kendi ekseninde dönmesi → <strong>Yaklaşık 27 gün 8 saat</strong><br>• <strong>N:</strong> Ay'ın Dünya etrafında dolanması → <strong>Yaklaşık 27 gün 8 saat</strong><br>• <strong>O:</strong> Dünya'nın kendi ekseninde dönmesi → <strong>24 saat (1 gün)</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_6', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_6', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_6', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_7">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru 7</span>
+          <strong>Özdeş Dinamometrelerde Ağırlık Hesaplama</strong>
+          <span class="q-pts-pill">15 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('fen_q7.mp3', 'q_strip_7', 'Soru 7. K cisminin ağırlığı 72 Newton olduğuna göre L, M, N, P ve R cisimlerinin ağırlıklarını bulunuz.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('fen_sol7.mp3', 'q_strip_7', 'Soru 7\'nin çözümü. Dinamometrenin her bir bölmesi 12 Newton\'dur. L 60 N, M 48 N, N 36 N, P 24 N, R 12 Newton\'dur.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_7')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="L = ... N, M = ... N, N = ... N, P = ... N, R = ... N"></textarea>
+      <div id="sol_reveal_7" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body"><strong>Çözüm Adımları:</strong><br>K cismi 6 bölme uzatmış ve 72 N ise: 1 bölme = 72 ÷ 6 = <strong>12 N</strong>'dur.<br>• <strong>L (5 bölme):</strong> 5 × 12 = <strong>60 N</strong><br>• <strong>M (4 bölme):</strong> 4 × 12 = <strong>48 N</strong><br>• <strong>N (3 bölme):</strong> 3 × 12 = <strong>36 N</strong><br>• <strong>P (2 bölme):</strong> 2 × 12 = <strong>24 N</strong><br>• <strong>R (1 bölme):</strong> 1 × 12 = <strong>12 N</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_7', 15, 15, this)">15 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_7', 15, 7, this)">7 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_7', 15, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin: 32px 0;">
-        <button class="btn-start" style="padding: 16px 36px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
+      <div style="text-align: center; margin: 36px 0;">
+        <button class="btn-start" style="padding: 18px 42px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
           🏆 Fen Bilimleri Sınav Notumu Hesapla
         </button>
       </div>
     </div>
 
-    <!-- TAB 2: SUMMARY HAP BİLGİLER -->
+    <!-- TAB 2: ANSWER KEY -->
+    <div id="answer-key-pane" class="tab-pane">
+      <div class="pdf-interactive-page">
+        <div class="page-banner" style="background:#047857;">
+          <span>📄 Orijinal Öğretmen Çözüm Anahtarı Sayfa 3 & 4</span>
+          <span style="font-size:0.85rem; opacity:0.85;">Resmi Çözümler</span>
+        </div>
+        <div class="pdf-image-wrap">
+          <img src="assets/pdf_pages/fen/page_3.png" alt="Fen Cevap 3" loading="lazy">
+        </div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
+          <img src="assets/pdf_pages/fen/page_4.png" alt="Fen Cevap 4" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SUMMARY -->
     <div id="summary-pane" class="tab-pane">
       <div class="summary-cards">
         <div class="summary-card">
-          <h4>☀️ 1. Güneş'in Özellikleri</h4>
+          <h4>☀️ 1. Güneş'in Temel Özellikleri</h4>
           <ul>
-            <li>Şekli küreseldir, hidrojen ve helyum gazlarından oluşur.</li>
+            <li>Şekli küredir, %73 Hidrojen ve %25 Helyum gazlarından oluşur.</li>
             <li>Dünyamızın temel ısı ve ışık kaynağıdır.</li>
-            <li>Kendi ekseni etrafında saat yönünün tersine 25 günde döner.</li>
+            <li>Kendi ekseni etrafında saat yönünün tersine döner (yaklaşık 25 gün).</li>
           </ul>
         </div>
         <div class="summary-card">
-          <h4>🌑 2. Ay'ın Yapısı ve Evreleri</h4>
+          <h4>🌑 2. Ay'ın Evreleri</h4>
           <ul>
-            <li>Ay'ın atmosferi yok denecek kadar azdır, hava olayları yaşanmaz.</li>
-            <li>Dünya'dan Ay'ın hep aynı yüzü görünür çünkü kendi etrafında dönme süresi ile Dünya etrafında dolanma süresi eşittir (yaklaşık 27 gün).</li>
-            <li>Ana Evreler: Yeni Ay, İlk Dördün, Dolunay, Son Dördün.</li>
+            <li>Ana Evreler: Yeni Ay → İlk Dördün → Dolunay → Son Dördün.</li>
+            <li>Ara Evreler: Hilal ve Şişkin Ay.</li>
+            <li>İki ana evre arası yaklaşık 1 haftadır (7 gün).</li>
           </ul>
         </div>
         <div class="summary-card">
           <h4>⚖️ 3. Dinamometre</h4>
           <ul>
-            <li>Kuvvet dinamometre ile ölçülür, birimi Newton'dur (N).</li>
-            <li>Hassas ölçüm için ince yaylı, büyük kuvvetler için kalın yaylı dinamometre seçilir.</li>
+            <li>Kuvvet ölçüm aracıdır, birimi Newton (N)'dur.</li>
+            <li>Yayın uzama miktarı cismin ağırlığıyla doğru orantılıdır.</li>
           </ul>
         </div>
       </div>
@@ -217,7 +365,7 @@
       <div class="modal-content">
         <h2>🎉 Sınav Çalışması Tamamlandı!</h2>
         <div class="modal-score" id="finalScoreVal">100</div>
-        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Başarı Puanı / 100</p>
+        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Puan / 100</p>
         <p id="scoreFeedback" style="font-size: 1.05rem; line-height: 1.5; color: #334155;">Harika bir çalışma gerçekleştirdin!</p>
         <button class="btn-modal" onclick="portalApp.closeModal()">Kapat ve İncelemeye Devam Et</button>
       </div>
@@ -226,9 +374,9 @@
   
     <footer class="site-footer">
       <div class="container">
-        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">5. Sınıf 1. Dönem 1. Yazılı Akıllı Hazırlık Portalı</p>
-        <p style="margin-top: 4px;">Milli Eğitim Bakanlığı Müfredatı ile Tam Uyumlu Etkileşimli Çalışma & Sesli Çözüm Materyali</p>
-        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır • Telefon, Tablet, Akıllı TV ve Bilgisayar Uyumlu</p>
+        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">Akıllı Yazılıya Hazırlık Portalı</p>
+        <p style="margin-top: 4px;">Tüm Sorular Çözümlü • PDF Üzerinde Doğrudan Çalışma • Mobil, Bilgisayar, Tablet ve Smart TV Uyumlu</p>
+        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır</p>
       </div>
     </footer>
     

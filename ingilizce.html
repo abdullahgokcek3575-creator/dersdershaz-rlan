@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5. Sınıf İngilizce 1. Dönem 1. Yazılı - Orijinal PDF Üzerinde Çalışma</title>
+  <title>5. Sınıf İngilizce 1. Dönem 1. Yazılı - Tüm Sorular Çözümlü</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }</style>
 </head>
 <body class="theme-ingilizce">
   
     <header class="site-header">
       <div class="nav-bar">
         <a href="index.html" class="brand-link">
-          <span class="brand-badge">5. SINIF</span>
-          <span>Akıllı Yazılı Çalışma Portalı</span>
+          <span class="brand-badge">AKILLI PORTAL</span>
+          <span>Etkileşimli Yazılı Hazırlık</span>
         </a>
         <nav class="nav-links">
           <a href="index.html" class="nav-link">🏠 Ana Sayfa</a>
-<a href="turkce.html" class="nav-link">📚 Türkçe</a>
-<a href="matematik.html" class="nav-link">📐 Matematik</a>
-<a href="fen-bilimleri.html" class="nav-link">🔬 Fen Bilimleri</a>
-<a href="sosyal-bilgiler.html" class="nav-link">🌍 Sosyal Bilgiler</a>
-<a href="din-kulturu.html" class="nav-link">🕌 Din Kültürü</a>
-<a href="ingilizce.html" class="nav-link active">🇬🇧 İngilizce</a>
+<a href="turkce.html" class="nav-link">📚 5. Sınıf Türkçe</a>
+<a href="matematik.html" class="nav-link">📐 5. Sınıf Matematik</a>
+<a href="fen-bilimleri.html" class="nav-link">🔬 5. Sınıf Fen</a>
+<a href="sosyal-bilgiler.html" class="nav-link">🌍 5. Sınıf Sosyal</a>
+<a href="din-kulturu.html" class="nav-link">🕌 5. Sınıf Din</a>
+<a href="ingilizce.html" class="nav-link active">🇬🇧 5. Sınıf İngilizce</a>
+<a href="mebi-sorulari.html" class="nav-link">⭐ 7. Sınıf MEBİ Yazılıları</a>
 <a href="qr_giris.html" class="nav-link">📱 Ağ / TV Giriş</a>
 
         </nav>
@@ -36,127 +36,257 @@
   <main class="container">
     <div class="lesson-header">
       <div class="lesson-info">
-        <h1><span>🇬🇧</span> İngilizce 1. Dönem 1. Yazılı</h1>
-        <p>Orijinal Sınav Kağıdı Üzerinde Soru Soru Sesli Çözüm • Hello! Unit • School Subjects • Nationalities</p>
+        <h1><span>🇬🇧</span> 5. Sınıf İngilizce 1. Dönem 1. Yazılı</h1>
+        <p>School Life • Telling the Time • Daily Routines • Must / Mustn't • Tüm Bölümler A, B, C, D, E</p>
       </div>
       <div class="score-box">
         <div class="score-val" id="currentScoreVal">0</div>
-        <div class="score-lbl">Mevcut Puan / 100</div>
+        <div class="score-lbl">Score / 100</div>
       </div>
     </div>
 
-    <!-- Master Audio Bar -->
+    <!-- Audio Bar -->
     <div class="audio-bar">
       <div class="audio-bar-info">
         <div class="audio-icon-pulse">🔊</div>
         <div>
-          <strong style="display:block; font-size:0.95rem;">English Teacher Studio Audio (Native Pronunciation)</strong>
-          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Ready (Click audio buttons to listen)</span>
+          <strong style="display:block; font-size:0.95rem;">English Teacher Audio Guide (PC & Mobile)</strong>
+          <span id="audioStatusText" style="font-size:0.8rem; color:#94a3b8;">Ready — Click audio buttons to listen</span>
         </div>
       </div>
       <div class="audio-controls">
-        <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Duraklat / Devam Et</button>
-        <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Durdur</button>
-        <button class="btn-audio primary" onclick="portalApp.playAudio('ing_summary.mp3')">📢 Listen Unit Summary</button>
+        <button class="btn-audio" onclick="portalApp.pauseSpeech()">⏸️ Pause / Resume</button>
+        <button class="btn-audio" onclick="portalApp.stopSpeech()">⏹️ Stop</button>
+        <button class="btn-audio primary" onclick="portalApp.playAudio('ing_summary.mp3', null, '5th Grade English 1st Term 1st Exam Summary. School life, telling the time, daily routines in simple present tense, numbers and rules with must and mustn\'t.')">📢 Listen Unit Summary</button>
       </div>
     </div>
 
-    <!-- Navigation Tabs -->
+    <!-- Tabs -->
     <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Çalış & Dinle</button>
-      <button class="tab-btn" data-tab="summary-pane">💡 Sınavda Çıkacak Hap Bilgiler</button>
+      <button class="tab-btn active" data-tab="pdf-pane">📄 Orijinal PDF Üzerinde Tüm Soruları Çöz</button>
+      <button class="tab-btn" data-tab="answer-key-pane">🔑 Answer Key (Cevap Anahtarı)</button>
+      <button class="tab-btn" data-tab="summary-pane">💡 Revision Notes (Hap Bilgiler)</button>
     </div>
 
-    <!-- TAB 1: DIRECT PDF WORKBENCH -->
+    <!-- TAB 1: WORKBENCH -->
     <div id="pdf-pane" class="tab-pane active">
       <div class="interactive-pdf-container">
         
-        <!-- PAGE 1 & 2 -->
+        <!-- Sayfa 4 (Part A & B) -->
         <div class="pdf-interactive-page">
           <div class="page-banner">
-            <span>📄 Original Exam Paper - Page 1 & 2 (Questions & Exercises)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">1st Term 1st Exam</span>
+            <span>📄 Exam Paper Page 4 (Part A: Timetable, Part B: Clocks)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">50 Points</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/ingilizce_p1.png" alt="İngilizce Sayfa 1" loading="eager">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/ingilizce_p2.png" alt="İngilizce Sayfa 2" loading="lazy">
+            <img src="assets/pdf_pages/ingilizce/page_4.png" alt="İngilizce Sayfa 4" loading="eager">
           </div>
           <div class="pdf-question-controls">
-            <!-- Q1 Controls -->
-            <div class="q-strip-header">
-              <div class="q-strip-title"><span>📌 Exercise 1:</span> School Subjects & Nationalities (20 Points)</div>
-              <div class="q-strip-actions">
-                <button class="btn-q-action audio-play" onclick="portalApp.playAudio('ing_q1.mp3')">🔊 Listen Question</button>
-                <button class="btn-q-action" onclick="portalApp.playAudio('ing_sol1.mp3')">🎙️ Listen Solution</button>
-                <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('pdf_sol_ing_1')">✅ Open / Close Solution</button>
-              </div>
-            </div>
-            <textarea class="student-input-box" placeholder="Write your answers here (e.g., Maths, Science, History, Turkish, English)..."></textarea>
-            <div id="pdf_sol_ing_1" class="q-solution-reveal">
-              <strong>✅ Official Answer Key:</strong> 1. Maths (Matematik), 2. Science (Fen Bilimleri), 3. Social Studies (Sosyal Bilgiler), 4. Art (Görsel Sanatlar), 5. P.E. (Physical Education - Beden Eğitimi). Country: Turkey -> Nationality: Turkish. Country: England -> Nationality: English.
-              <div class="self-grading">
-                <span>Puan Ver:</span>
-                <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_ing_1', 20, 20, this)">20 Points (Full)</button>
-                <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_ing_1', 20, 10, this)">10 Points</button>
-                <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_ing_1', 20, 0, this)">0 Points</button>
-              </div>
-            </div>
+            
+    <div class="q-strip" id="q_strip_A">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru A</span>
+          <strong>Fred's Weekly Schedule (Ders Programı)</strong>
+          <span class="q-pts-pill">30 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('ing_q1.mp3', 'q_strip_A', 'Part A. Answer the questions according to Fred\'s weekly timetable: 1. Total classes in a week, 2. Classes on Friday, 3. English class days.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('ing_sol1.mp3', 'q_strip_A', 'Part A solution. 1: Fred has twenty classes in a week. 2: On Friday he has Turkish, Music and Information Technologies. 3: Fred has English on Tuesday and Thursday.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_A')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: 20 classes
+2: Turkish, Music, ICT
+3: Tuesday and Thursday..."></textarea>
+      <div id="sol_reveal_A" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. <strong>How many classes does Fred have in a week?</strong><br>→ <em>He has <strong>20 classes</strong> in a week.</em> (5 days × 4 classes)<br><br>2. <strong>Which classes does he have on Friday?</strong><br>→ <em>He has <strong>Turkish, Music and ICT</strong> (Information and Communication Technology).</em><br><br>3. <strong>When does Fred have English class?</strong><br>→ <em>He has English class on <strong>Tuesday and Thursday</strong>.</em></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_A', 30, 30, this)">30 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_A', 30, 15, this)">15 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_A', 30, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_B">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru B</span>
+          <strong>Telling the Time (Saatleri Yazma)</strong>
+          <span class="q-pts-pill">20 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('ing_q2.mp3', 'q_strip_B', 'Part B. Look at the clocks and write down the time.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('ing_sol2.mp3', 'q_strip_B', 'Part B solution. Clock one: It is eleven o\'clock. Clock two: It is quarter past seven. Clock three: It is quarter to ten. Clock four: It is half past seven.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_B')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: It's eleven o'clock...
+2: It's quarter past seven...
+3: It's quarter to ten...
+4: It's half past seven..."></textarea>
+      <div id="sol_reveal_B" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">• 1. Saat (11:00): <strong>It's eleven o'clock.</strong><br>• 2. Saat (07:15): <strong>It's quarter past seven.</strong><br>• 3. Saat (09:45): <strong>It's quarter to ten.</strong><br>• 4. Saat (07:30): <strong>It's half past seven.</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_B', 20, 20, this)">20 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_B', 20, 10, this)">10 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_B', 20, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
-        <!-- PAGE 3 - 7 (Answer Key & Full Booklet) -->
+        <!-- Sayfa 5 (Part C, D, E) -->
         <div class="pdf-interactive-page">
-          <div class="page-banner" style="background:#047857;">
-            <span>📄 Official Teacher Answer Key Pages (Pages 3 - 7)</span>
-            <span style="font-size:0.85rem; opacity:0.85;">Official Solutions</span>
+          <div class="page-banner">
+            <span>📄 Exam Paper Page 5 (Part C: Reading, Part D: Numbers, Part E: Must/Mustn't)</span>
+            <span style="font-size:0.85rem; opacity:0.85;">50 Points</span>
           </div>
           <div class="pdf-image-wrap">
-            <img src="assets/img/ingilizce_p3.png" alt="İngilizce Sayfa 3" loading="lazy">
+            <img src="assets/pdf_pages/ingilizce/page_5.png" alt="İngilizce Sayfa 5" loading="lazy">
           </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/ingilizce_p4.png" alt="İngilizce Sayfa 4" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/ingilizce_p5.png" alt="İngilizce Sayfa 5" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/ingilizce_p6.png" alt="İngilizce Sayfa 6" loading="lazy">
-          </div>
-          <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
-            <img src="assets/img/ingilizce_p7.png" alt="İngilizce Sayfa 7" loading="lazy">
+          <div class="pdf-question-controls">
+            
+    <div class="q-strip" id="q_strip_C">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru C</span>
+          <strong>Mia's Daily Routine Reading Text</strong>
+          <span class="q-pts-pill">40 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('ing_q3.mp3', 'q_strip_C', 'Part C. Read the text about Mia\'s daily routine and answer the five comprehension questions.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('ing_sol3.mp3', 'q_strip_C', 'Part C solution. 1: She wakes up at 6:30 a.m. 2: Yes, she walks to school. 3: She plays volleyball with her friends in the park. 4: No, she has dinner at 7:00 p.m. 5: She plays with her friends.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_C')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: At 6:30 a.m.
+2: Yes, she does.
+3: Plays volleyball...
+4: No, she doesn't.
+5: With her friends..."></textarea>
+      <div id="sol_reveal_C" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. <strong>What time does Mia wake up?</strong><br>→ <em>She wakes up at <strong>6:30 a.m.</strong> every morning.</em><br><br>2. <strong>Does Mia walk to school?</strong><br>→ <em><strong>Yes, she does.</strong> (Because it is very close to her house.)</em><br><br>3. <strong>What does Mia do at 5:00 p.m.?</strong><br>→ <em>She <strong>plays volleyball with her friends in the park</strong>.</em><br><br>4. <strong>Does Mia have dinner at 6:00 p.m.?</strong><br>→ <em><strong>No, she doesn't.</strong> She has dinner at 7:00 p.m.</em><br><br>5. <strong>Who does Mia play volleyball with?</strong><br>→ <em>She plays volleyball <strong>with her friends</strong>.</em></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_C', 40, 40, this)">40 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_C', 40, 20, this)">20 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_C', 40, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_D">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru D</span>
+          <strong>Numbers in Words (Sayıların Yazılışı)</strong>
+          <span class="q-pts-pill">6 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('ing_q4.mp3', 'q_strip_D', 'Part D. Write the numbers in words: 92, 100, 65.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('ing_sol4.mp3', 'q_strip_D', 'Part D solution. 92 is ninety-two. 100 is one hundred. 65 is sixty-five.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_D')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: ninety-two, 2: one hundred, 3: sixty-five..."></textarea>
+      <div id="sol_reveal_D" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. 92 = <strong>ninety-two</strong><br>2. 100 = <strong>one hundred</strong> (a hundred)<br>3. 65 = <strong>sixty-five</strong></div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_D', 6, 6, this)">6 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_D', 6, 3, this)">3 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_D', 6, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
+            <hr style="border:none; border-top:1px solid #e2e8f0; margin:14px 0;">
+            
+    <div class="q-strip" id="q_strip_E">
+      <div class="q-strip-header">
+        <div class="q-strip-title">
+          <span class="q-num-badge">Soru E</span>
+          <strong>Must and Mustn't (Zorunluluk ve Yasaklar)</strong>
+          <span class="q-pts-pill">4 Puan</span>
+        </div>
+        <div class="q-strip-actions">
+          <button class="btn-q-action audio-play" onclick="portalApp.playAudio('ing_q5.mp3', 'q_strip_E', 'Part E. Fill in the blanks with must or mustn\'t.')">🔊 Soruyu Dinle</button>
+          <button class="btn-q-action audio-sol" onclick="portalApp.playAudio('ing_sol5.mp3', 'q_strip_E', 'Part E solution. 1 must follow rules. 2 mustn\'t use phones in library. 3 must be kind. 4 mustn\'t eat in lab.')">🎙️ Çözümü Dinle</button>
+          <button class="btn-q-action solution-btn" onclick="portalApp.toggleSolution('sol_reveal_E')">✅ Çözümü Aç / Kapat</button>
+        </div>
+      </div>
+      <textarea class="student-input-box" placeholder="1: must, 2: mustn't, 3: must, 4: mustn't..."></textarea>
+      <div id="sol_reveal_E" class="q-solution-reveal">
+        <div class="sol-title">📌 Öğretmen Çözümü & Model Cevap:</div>
+        <div class="sol-body">1. You <strong>must</strong> follow the rules at school. (Zorunluluk)<br>2. You <strong>mustn't</strong> use your mobile phones in the library. (Yasak)<br>3. You <strong>must</strong> be kind to your classmates. (Gereklilik)<br>4. You <strong>mustn't</strong> eat or drink in the lab. (Yasak)</div>
+        <div class="self-grading">
+          <span>Bu sorudan aldığın puan:</span>
+          <button class="grade-btn full" onclick="portalApp.gradeQuestion('q_E', 4, 4, this)">4 Puan (Tam Doğru)</button>
+          <button class="grade-btn half" onclick="portalApp.gradeQuestion('q_E', 4, 2, this)">2 Puan (Kısmi)</button>
+          <button class="grade-btn zero" onclick="portalApp.gradeQuestion('q_E', 4, 0, this)">0 Puan</button>
+        </div>
+      </div>
+    </div>
+    
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin: 32px 0;">
-        <button class="btn-start" style="padding: 16px 36px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
-          🏆 İngilizce Sınav Notumu Hesapla
+      <div style="text-align: center; margin: 36px 0;">
+        <button class="btn-start" style="padding: 18px 42px; font-size: 1.15rem; cursor: pointer;" onclick="portalApp.finishExam()">
+          🏆 Calculate My English Score
         </button>
       </div>
     </div>
 
-    <!-- TAB 2: SUMMARY HAP BİLGİLER -->
+    <!-- TAB 2: ANSWER KEY -->
+    <div id="answer-key-pane" class="tab-pane">
+      <div class="pdf-interactive-page">
+        <div class="page-banner" style="background:#047857;">
+          <span>📄 Official Teacher Answer Key Pages (Pages 6 & 7)</span>
+          <span style="font-size:0.85rem; opacity:0.85;">Official Solutions</span>
+        </div>
+        <div class="pdf-image-wrap">
+          <img src="assets/pdf_pages/ingilizce/page_6.png" alt="İngilizce Cevap 6" loading="lazy">
+        </div>
+        <div class="pdf-image-wrap" style="border-top:2px solid #e2e8f0;">
+          <img src="assets/pdf_pages/ingilizce/page_7.png" alt="İngilizce Cevap 7" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SUMMARY -->
     <div id="summary-pane" class="tab-pane">
       <div class="summary-cards">
         <div class="summary-card">
-          <h4>🏫 1. School Subjects</h4>
+          <h4>⏰ 1. Telling the Time</h4>
           <ul>
-            <li><strong>Maths:</strong> Numbers and calculations.</li>
-            <li><strong>Science:</strong> Experiments, nature and planets.</li>
-            <li><strong>Social Studies:</strong> History and geography.</li>
-            <li><strong>Art:</strong> Drawing and painting.</li>
-            <li><strong>Physical Education (P.E.):</strong> Sports and gymnastics.</li>
+            <li><strong>Tam saatler:</strong> It's two o'clock. (Saat 2:00)</li>
+            <li><strong>Çeyrek geçe:</strong> It's quarter past four. (Saat 4:15)</li>
+            <li><strong>Buçuk:</strong> It's half past six. (Saat 6:30)</li>
+            <li><strong>Çeyrek kala:</strong> It's quarter to ten. (Saat 9:45)</li>
           </ul>
         </div>
         <div class="summary-card">
-          <h4>🌍 2. Countries & Nationalities</h4>
+          <h4>🚫 2. Must & Mustn't</h4>
           <ul>
-            <li>Where are you from? -> I am from Turkey. (Country)</li>
-            <li>What nationality are you? -> I am Turkish. (Nationality)</li>
-            <li>Germany -> German, Spain -> Spanish, France -> French.</li>
+            <li><strong>Must:</strong> Yapılması zorunlu kurallar. (You must listen to your teacher.)</li>
+            <li><strong>Mustn't:</strong> Yapılması kesinlikle yasak olanlar. (You mustn't run in the corridors.)</li>
           </ul>
         </div>
       </div>
@@ -169,7 +299,7 @@
       <div class="modal-content">
         <h2>🎉 Sınav Çalışması Tamamlandı!</h2>
         <div class="modal-score" id="finalScoreVal">100</div>
-        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Başarı Puanı / 100</p>
+        <p style="font-weight: 700; color: #64748b; margin-bottom: 12px;">Toplam Puan / 100</p>
         <p id="scoreFeedback" style="font-size: 1.05rem; line-height: 1.5; color: #334155;">Harika bir çalışma gerçekleştirdin!</p>
         <button class="btn-modal" onclick="portalApp.closeModal()">Kapat ve İncelemeye Devam Et</button>
       </div>
@@ -178,9 +308,9 @@
   
     <footer class="site-footer">
       <div class="container">
-        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">5. Sınıf 1. Dönem 1. Yazılı Akıllı Hazırlık Portalı</p>
-        <p style="margin-top: 4px;">Milli Eğitim Bakanlığı Müfredatı ile Tam Uyumlu Etkileşimli Çalışma & Sesli Çözüm Materyali</p>
-        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır • Telefon, Tablet, Akıllı TV ve Bilgisayar Uyumlu</p>
+        <p style="font-weight: 700; color: #1e293b; font-size: 1rem;">Akıllı Yazılıya Hazırlık Portalı</p>
+        <p style="margin-top: 4px;">Tüm Sorular Çözümlü • PDF Üzerinde Doğrudan Çalışma • Mobil, Bilgisayar, Tablet ve Smart TV Uyumlu</p>
+        <p style="margin-top: 8px; font-size: 0.82rem; color: #94a3b8;">Her Hakkı Saklıdır</p>
       </div>
     </footer>
     
